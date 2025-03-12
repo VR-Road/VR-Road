@@ -1,869 +1,153 @@
 Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.5487; Version 2009; 64bit' Language: 'en' Physical Memory: 32669 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/tonyche/My project
+C:/Users/T_che/VR-Road
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60035
-Successfully changed project path to: /Users/tonyche/My project
-/Users/tonyche/My project
+51359
+Successfully changed project path to: C:/Users/T_che/VR-Road
+C:/Users/T_che/VR-Road
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 39.46 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.81 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/tonyche/My project/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/T_che/VR-Road/Assets
 GfxDevice: creating device client; threaded=0
-2025-03-08 11:06:11.997 Unity[54298:13110154] (null) preferred device: Apple M1 (high power)
-2025-03-08 11:06:11.997 Unity[54298:13110154] Metal devices available: 1
-2025-03-08 11:06:11.997 Unity[54298:13110154] 0: Apple M1 (high power)
-2025-03-08 11:06:11.998 Unity[54298:13110154] Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 710 (ID=0x128b)
+    Vendor:   
+    VRAM:     984 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56298
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001371 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 33.03 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001869 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 36.96 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.734 seconds
+- Completed reload, in  0.830 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000603 seconds.
+Registered in 0.001545 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.583 seconds
+- Completed reload, in  0.713 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.20 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1201 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 71.5 MB.
-System memory in use after: 71.5 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 1312 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.8 MB.
+System memory in use after: 82.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1669.
-Total: 1.419791 ms (FindLiveObjects: 0.170833 ms CreateObjectMapping: 0.027833 ms MarkObjects: 1.094334 ms  DeleteObjects: 0.124791 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Fantastic City Generator/Generate.prefab
-  artifactKey: Guid(913769814a248de4db031a83080046b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Generate.prefab using Guid(913769814a248de4db031a83080046b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a987457d79c8eaf6e17b73ba7189085b') in 3.881798 seconds
-  Import took 4.683835 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1781.
+Total: 2.375100 ms (FindLiveObjects: 0.468200 ms CreateObjectMapping: 0.039600 ms MarkObjects: 1.760900 ms  DeleteObjects: 0.104300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000693 seconds.
-  path: Assets/Fantastic City Generator/Traffic System/Traffic System.prefab
-  artifactKey: Guid(a8566725e98545841a4f4fa06a6f20f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Traffic System/Traffic System.prefab using Guid(a8566725e98545841a4f4fa06a6f20f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8cb07300cb155d82dc98fe7cbb16fb') in 0.040678 seconds
-  Import took 0.048997 seconds .
+  path: Assets/Scenes/Nighttime.unity
+  artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nighttime.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18849b61bafc737c1a13e363eb5e4a1') in 0.018386 seconds
+  Import took 0.021134 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Fantastic City Generator/Traffic System
-  artifactKey: Guid(5dc22fd8e908ebe468aee922fdd5fe56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Traffic System using Guid(5dc22fd8e908ebe468aee922fdd5fe56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9d56028272dfe04f65798d81ee95b6') in 0.001024 seconds
-  Import took 0.003271 seconds .
+  Time since last request: 102.119347 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c453cd733b4cb7d573358f1d4c3c61') in 0.008477 seconds
+  Import took 0.010826 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 252.216635 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs
-  artifactKey: Guid(0a3a45a328205d54fbef953b95c28e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs using Guid(0a3a45a328205d54fbef953b95c28e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a174ac169233739f3e6005b1389e923') in 0.009576 seconds
-  Import took 0.065414 seconds .
+  Time since last request: 0.001628 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c453cd733b4cb7d573358f1d4c3c61') in 0.002012 seconds
+  Import took 0.003796 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.826849 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX
-  artifactKey: Guid(965e16467a83d374fbec315d01e2fad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX using Guid(965e16467a83d374fbec315d01e2fad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f267556f2d762e559e017bd557a4541d') in 0.001935 seconds
-  Import took 0.008130 seconds .
+  Time since last request: 91.589553 seconds.
+  path: Assets/Scenes/Parking.unity
+  artifactKey: Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Parking.unity using Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e4e9a557917eaf8d6ed5475011ab4a') in 0.010200 seconds
+  Import took 0.012613 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.215285 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/do_not_enter.fbx
-  artifactKey: Guid(31d35d752bd9ed546bf1fc191b627977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/do_not_enter.fbx using Guid(31d35d752bd9ed546bf1fc191b627977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2585a7deb42974c7c52098ded2caeb') in 0.973483 seconds
-  Import took 0.978963 seconds .
+  Time since last request: 3.814344 seconds.
+  path: Assets/Scenes/Practice.unity
+  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcf46093386625d82695691614f1876') in 0.009251 seconds
+  Import took 0.011576 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/ExtrutureMetalic.fbx
-  artifactKey: Guid(e0b043916777e59408f027ffaec58715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/ExtrutureMetalic.fbx using Guid(e0b043916777e59408f027ffaec58715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc8bcc6b3d3b75d7d982af6d39594b8') in 0.100807 seconds
-  Import took 0.105059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/pedestrian.fbx
-  artifactKey: Guid(9a26a9ddaa5fcf542931150ac194975c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/pedestrian.fbx using Guid(9a26a9ddaa5fcf542931150ac194975c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd40015f361412c3268bd8615fefe56c') in 0.033180 seconds
-  Import took 0.036856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/Oneway-Right.fbx
-  artifactKey: Guid(374313f9e28e3a04b8539e75b2fb12d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/Oneway-Right.fbx using Guid(374313f9e28e3a04b8539e75b2fb12d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1245ac83e845449780a4defe3b3cd2e') in 0.070241 seconds
-  Import took 0.074457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/Signal-01.fbx
-  artifactKey: Guid(b95a3a0c1c1f89d42b81cd82795a6c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/Signal-01.fbx using Guid(b95a3a0c1c1f89d42b81cd82795a6c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9304f376527018e3407e89b99414a21c') in 0.012269 seconds
-  Import took 0.015062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/Oneway-Left.fbx
-  artifactKey: Guid(28c5da7bda242a741bb1deeac9f65171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/Oneway-Left.fbx using Guid(28c5da7bda242a741bb1deeac9f65171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f3620cac74daa117218dc140ac337a') in 0.033835 seconds
-  Import took 0.036579 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/FBX/RoadMarks.fbx
-  artifactKey: Guid(51a6ffa513bc56647a16154fe1248ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/FBX/RoadMarks.fbx using Guid(51a6ffa513bc56647a16154fe1248ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5ab8798f19205052442e03fd0a4293') in 0.046580 seconds
-  Import took 0.048847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.285038 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-F.prefab
-  artifactKey: Guid(320110790daf5be4ab25e0aee0d0c3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-F.prefab using Guid(320110790daf5be4ab25e0aee0d0c3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48dfe1e8d9e1da94a1f1e7c759b53a3') in 0.060310 seconds
-  Import took 0.094576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000455 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Right.prefab
-  artifactKey: Guid(d417086560fdffc4ba0375b6177bb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Right.prefab using Guid(d417086560fdffc4ba0375b6177bb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d612ba00b462e6131e12e4d2d084619') in 0.065565 seconds
-  Import took 0.069171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FR.prefab
-  artifactKey: Guid(0b940ffa2f8532c479aed2cdbb445c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FR.prefab using Guid(0b940ffa2f8532c479aed2cdbb445c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a917563bb71ecda7d5244b293b87ffbf') in 0.007756 seconds
-  Import took 0.010155 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Bus Stop.prefab
-  artifactKey: Guid(43224fa894071bb438b852c84247b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Bus Stop.prefab using Guid(43224fa894071bb438b852c84247b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096b9bac0273afecb781c6c6f21d940a') in 0.007858 seconds
-  Import took 0.010884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/pedestrian.prefab
-  artifactKey: Guid(2d04bc45f3cb4444dacc586dcc19ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/pedestrian.prefab using Guid(2d04bc45f3cb4444dacc586dcc19ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf305b0e65eeac12165cfe2749ddec86') in 0.030604 seconds
-  Import took 0.034361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FL.prefab
-  artifactKey: Guid(675e687128a697a4297f9b50153b9952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FL.prefab using Guid(675e687128a697a4297f9b50153b9952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cd1f2d04f449516ca9377c86a2cf96') in 0.007419 seconds
-  Import took 0.009776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-R.prefab
-  artifactKey: Guid(2ea68929407c1864b90527cb5d052f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-R.prefab using Guid(2ea68929407c1864b90527cb5d052f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da62aee2bcfa9494e737ef185f8ad41') in 0.009032 seconds
-  Import took 0.011149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/ExtrutureMetalic.prefab
-  artifactKey: Guid(aeb89d1ab15bed24f8ca218db34bbd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/ExtrutureMetalic.prefab using Guid(aeb89d1ab15bed24f8ca218db34bbd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d28351bba0b55d90f9aca3f5642d24') in 0.041569 seconds
-  Import took 0.044941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Left.prefab
-  artifactKey: Guid(939989b957a7d9f40a4e23c8b2e2501f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Left.prefab using Guid(939989b957a7d9f40a4e23c8b2e2501f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daeffb1273b69f0a65273258a9cd3012') in 0.032926 seconds
-  Import took 0.035931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/do_not_enter.prefab
-  artifactKey: Guid(d6dd04fe968e8f9419670bfde336cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/do_not_enter.prefab using Guid(d6dd04fe968e8f9419670bfde336cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815b0f930fbca49e62c59e1898fae463') in 0.027941 seconds
-  Import took 0.031367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-L.prefab
-  artifactKey: Guid(97d02bd101360fb41b28d353ad648c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-L.prefab using Guid(97d02bd101360fb41b28d353ad648c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46217af742b26d3b6844b9027f724ff6') in 0.006977 seconds
-  Import took 0.008962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.859265 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-01.fbx
-  artifactKey: Guid(f642d9088e8e20a4e913793294a381b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-01.fbx using Guid(f642d9088e8e20a4e913793294a381b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f3a5160a77f79112299fe538a86af2') in 0.060666 seconds
-  Import took 0.066038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/hydrant-01.fbx
-  artifactKey: Guid(ae72d58ae54adb942a53797ae7126928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/hydrant-01.fbx using Guid(ae72d58ae54adb942a53797ae7126928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e0b7aa9c96ba8317c7c496b4c773e4') in 0.015044 seconds
-  Import took 0.018422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Chairs-02.fbx
-  artifactKey: Guid(232b548b0e105ae4fad6b61e7e81cd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Chairs-02.fbx using Guid(232b548b0e105ae4fad6b61e7e81cd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cb85db4bd73468eac560c45a141ce8') in 0.041094 seconds
-  Import took 0.044655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Cone.fbx
-  artifactKey: Guid(edebac3a1276a544b93e171c53fb29c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Cone.fbx using Guid(edebac3a1276a544b93e171c53fb29c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f7d4a3c68f90d3898fa56bdfeb53be') in 0.039469 seconds
-  Import took 0.042245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Light-02.fbx
-  artifactKey: Guid(6ad4bcc44cc70e846a2a2572029761c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Light-02.fbx using Guid(6ad4bcc44cc70e846a2a2572029761c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d318a07b3dacd9b9a6e7ac14e5876a') in 0.179037 seconds
-  Import took 0.181128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-04.fbx
-  artifactKey: Guid(22673ad1b90471a48886d040c4147033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-04.fbx using Guid(22673ad1b90471a48886d040c4147033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb95ea1a8bda994d672d0e1398c5c81') in 0.038204 seconds
-  Import took 0.041127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/ParkLamp.fbx
-  artifactKey: Guid(378f97cc4d494714383ed1930508aee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/ParkLamp.fbx using Guid(378f97cc4d494714383ed1930508aee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3168b64180d822482ce78afe6f12556e') in 0.012451 seconds
-  Import took 0.014383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/ElectricalBox-01.fbx
-  artifactKey: Guid(cf7775d50931cb04db0f284ac995a795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/ElectricalBox-01.fbx using Guid(cf7775d50931cb04db0f284ac995a795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ae2aa4ca1b6bdde60645edadbeef18') in 0.031951 seconds
-  Import took 0.034715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/hydrant-02.fbx
-  artifactKey: Guid(d585ec7bec04b5548af33c30b5d0135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/hydrant-02.fbx using Guid(d585ec7bec04b5548af33c30b5d0135b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34f5aac7152429e8bed1cbab2b95249') in 0.011984 seconds
-  Import took 0.013947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/BusStop.fbx
-  artifactKey: Guid(afeab46c591b7794787372a28c6d393c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/BusStop.fbx using Guid(afeab46c591b7794787372a28c6d393c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fc47705a8e7138c2d940b40f742483') in 0.049858 seconds
-  Import took 0.052229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02d.fbx
-  artifactKey: Guid(fb96767b7138d5840ac7f13fb8cd8143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02d.fbx using Guid(fb96767b7138d5840ac7f13fb8cd8143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7b9adbed52829209881ae71a50489d') in 0.038376 seconds
-  Import took 0.041318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-01.fbx
-  artifactKey: Guid(609c662d96654ac43b7782d19d39c395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-01.fbx using Guid(609c662d96654ac43b7782d19d39c395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95da079795eb183651fe5986edcf908') in 0.049002 seconds
-  Import took 0.052136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02a.fbx
-  artifactKey: Guid(387de2032f1ee1f44961d2451e8bd4bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02a.fbx using Guid(387de2032f1ee1f44961d2451e8bd4bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3426976c2eb022efa4e8eabab80fdb3') in 0.033671 seconds
-  Import took 0.036797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/SoccerCamp.fbx
-  artifactKey: Guid(f6d83fd9c26afa84789a894e006583da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/SoccerCamp.fbx using Guid(f6d83fd9c26afa84789a894e006583da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29efbe4d870e0df234b0509447f2bac2') in 0.041444 seconds
-  Import took 0.043990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02c.fbx
-  artifactKey: Guid(459e866f1612f8f40a74541f936dd2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02c.fbx using Guid(459e866f1612f8f40a74541f936dd2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9283127c0ddf1c5d6c500f1e26c8f6a4') in 0.032226 seconds
-  Import took 0.034850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/ElectricalBox-02.fbx
-  artifactKey: Guid(172699eecd3e19a4d8a3a7cea559c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/ElectricalBox-02.fbx using Guid(172699eecd3e19a4d8a3a7cea559c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1d766a1e5e060f6018a951c8330827') in 0.030916 seconds
-  Import took 0.033812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-03.fbx
-  artifactKey: Guid(b64ff48536645f04ba3931859fec401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-03.fbx using Guid(b64ff48536645f04ba3931859fec401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efef52f0d89278174e40b73d9293d99b') in 0.038976 seconds
-  Import took 0.041508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Trash-01.fbx
-  artifactKey: Guid(361fffd8419100d4ebcf1f0edb9b3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Trash-01.fbx using Guid(361fffd8419100d4ebcf1f0edb9b3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b8f7609696e824556ad3cf67c9ab13') in 0.032076 seconds
-  Import took 0.035144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-04.fbx
-  artifactKey: Guid(1aa5649ac17c082439bd3f18f3e1ca35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-04.fbx using Guid(1aa5649ac17c082439bd3f18f3e1ca35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d31ddf0eb4a46fedb2384a92ea62fb') in 0.030099 seconds
-  Import took 0.032993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-06.fbx
-  artifactKey: Guid(0490e821ffa6bc943a5115b8049d554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-06.fbx using Guid(0490e821ffa6bc943a5115b8049d554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffea10b484baa9f664986cf0906d8de') in 0.013271 seconds
-  Import took 0.015669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-02.fbx
-  artifactKey: Guid(9b76a8f2c54d5984e82bf6cd30148166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Barrier-02.fbx using Guid(9b76a8f2c54d5984e82bf6cd30148166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97858968537fbfda0e7ce5b7b85c0e1') in 0.023958 seconds
-  Import took 0.026955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Dumpster.fbx
-  artifactKey: Guid(059b3830c92c3d64ea6b5ecca17d87bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Dumpster.fbx using Guid(059b3830c92c3d64ea6b5ecca17d87bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acd36d94d980b0bdb4dfd86a3e8b12a') in 0.031263 seconds
-  Import took 0.033907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-05.fbx
-  artifactKey: Guid(c29f04005d123324ea512614f862ff09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-05.fbx using Guid(c29f04005d123324ea512614f862ff09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5896facbfe37020cdfe704a46c41fa04') in 0.032299 seconds
-  Import took 0.034721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/BusStop-02.fbx
-  artifactKey: Guid(4254edca7b60b4d49ae0e2c47f331663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/BusStop-02.fbx using Guid(4254edca7b60b4d49ae0e2c47f331663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e62764df249ae07a053733550397211') in 0.033710 seconds
-  Import took 0.036980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02b.fbx
-  artifactKey: Guid(6ad1eafba8c83844581d8c067c4638e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Trash-02b.fbx using Guid(6ad1eafba8c83844581d8c067c4638e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48b391b4b2a01cef08d7596bc8927b5') in 0.036969 seconds
-  Import took 0.040070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/BusStop-01.fbx
-  artifactKey: Guid(f089b172e8ef9dc46a1f9ecdb6c64f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/BusStop-01.fbx using Guid(f089b172e8ef9dc46a1f9ecdb6c64f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c0fcd2fad439955f115fd6095ec8b2') in 0.033669 seconds
-  Import took 0.036623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-03.fbx
-  artifactKey: Guid(ee7d2116c4597ca488c6b8fbc58d625d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-03.fbx using Guid(ee7d2116c4597ca488c6b8fbc58d625d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de274c354351f4c0546c6df678e76fd6') in 0.030482 seconds
-  Import took 0.034249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Chairs-01.fbx
-  artifactKey: Guid(1ceff4a0213857d41b436aa651f6ee4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Chairs-01.fbx using Guid(1ceff4a0213857d41b436aa651f6ee4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952a8ea781ae15f4f2aa22c5ec8d0483') in 0.030246 seconds
-  Import took 0.032899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Art-02.fbx
-  artifactKey: Guid(47073810014b025468e37a8f30258548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Art-02.fbx using Guid(47073810014b025468e37a8f30258548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba72acab6455e165367ac39ebca063a') in 0.031856 seconds
-  Import took 0.035011 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/FBX/Basket.fbx
-  artifactKey: Guid(10fbe32315632994a90d26d7001ec29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/FBX/Basket.fbx using Guid(10fbe32315632994a90d26d7001ec29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbf56ff2225aa0fd7aeadcc57050556') in 0.034739 seconds
-  Import took 0.037423 seconds .
+  Time since last request: 1.493909 seconds.
+  path: Assets/Scenes/Road_laws.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Road_laws.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7354d6696ccf7ced76738d571ff2457') in 0.009680 seconds
+  Import took 0.012107 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001041 seconds.
+Registered in 0.001900 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.788 seconds
+- Completed reload, in  0.602 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.7 MB.
-System memory in use after: 144.8 MB.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1268 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.9 MB.
+System memory in use after: 80.0 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1682.
-Total: 4.558208 ms (FindLiveObjects: 0.965375 ms CreateObjectMapping: 0.044167 ms MarkObjects: 3.447791 ms  DeleteObjects: 0.099166 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1785.
+Total: 1.688500 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.037400 ms MarkObjects: 1.422500 ms  DeleteObjects: 0.011600 ms)
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001190 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.864 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.4 MB.
-System memory in use after: 142.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1685.
-Total: 1.446083 ms (FindLiveObjects: 0.161292 ms CreateObjectMapping: 0.025208 ms MarkObjects: 1.179333 ms  DeleteObjects: 0.078542 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000985 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.825 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.0 MB.
-System memory in use after: 140.1 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1688.
-Total: 2.059667 ms (FindLiveObjects: 0.147583 ms CreateObjectMapping: 0.025250 ms MarkObjects: 1.810833 ms  DeleteObjects: 0.074750 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001223 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.695 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 137.6 MB.
-System memory in use after: 137.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1691.
-Total: 2.114500 ms (FindLiveObjects: 0.155167 ms CreateObjectMapping: 0.024875 ms MarkObjects: 1.869000 ms  DeleteObjects: 0.064167 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001039 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.774 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.3 MB.
-System memory in use after: 135.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1694.
-Total: 3.504125 ms (FindLiveObjects: 0.353625 ms CreateObjectMapping: 0.027041 ms MarkObjects: 3.044208 ms  DeleteObjects: 0.077666 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001046 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.694 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.1 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1697.
-Total: 1.855834 ms (FindLiveObjects: 0.154375 ms CreateObjectMapping: 0.030041 ms MarkObjects: 1.596917 ms  DeleteObjects: 0.073417 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000717 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.615 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.6 MB.
-System memory in use after: 130.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1700.
-Total: 1.220667 ms (FindLiveObjects: 0.130083 ms CreateObjectMapping: 0.024792 ms MarkObjects: 0.996791 ms  DeleteObjects: 0.068000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001129 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.819 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.2 MB.
-System memory in use after: 128.3 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1703.
-Total: 2.629791 ms (FindLiveObjects: 0.297125 ms CreateObjectMapping: 0.028500 ms MarkObjects: 2.213209 ms  DeleteObjects: 0.089792 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000528 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.696 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 125.9 MB.
-System memory in use after: 126.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1706.
-Total: 2.724708 ms (FindLiveObjects: 0.304708 ms CreateObjectMapping: 0.028084 ms MarkObjects: 2.305375 ms  DeleteObjects: 0.084917 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 5225.157754 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Dumpster.prefab
-  artifactKey: Guid(883dd9f3aee57d343b32822da892b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Dumpster.prefab using Guid(883dd9f3aee57d343b32822da892b0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a314eff8851e17306969779f21e1c9ab') in 0.346501 seconds
-  Import took 0.367482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02a.prefab
-  artifactKey: Guid(7b9f86581722f524f8d697b0565d5e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02a.prefab using Guid(7b9f86581722f524f8d697b0565d5e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f9fcf574f583529f29364220489e739') in 0.083349 seconds
-  Import took 0.088758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/hydrant-02.prefab
-  artifactKey: Guid(a51e7d613ebdaad41bb3b2300701c5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/hydrant-02.prefab using Guid(a51e7d613ebdaad41bb3b2300701c5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd631e4c7fec04666fd00e2c2e0f855aa') in 0.019105 seconds
-  Import took 0.021814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/ElectricalBox-01.prefab
-  artifactKey: Guid(b5bb9a5c947dae14ab47a8e05fe69bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/ElectricalBox-01.prefab using Guid(b5bb9a5c947dae14ab47a8e05fe69bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630d138ac4c0d96e4f977786cff6c31f') in 0.030196 seconds
-  Import took 0.032917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Light-02.prefab
-  artifactKey: Guid(0c9263e76f764124a98a21c1a89efe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Light-02.prefab using Guid(0c9263e76f764124a98a21c1a89efe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ae76c0c1847f97218e05680a5ac419') in 0.011537 seconds
-  Import took 0.013565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/ElectricalBox-02.prefab
-  artifactKey: Guid(ce6e9d2fd66850347b9ad1cf81941612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/ElectricalBox-02.prefab using Guid(ce6e9d2fd66850347b9ad1cf81941612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a0c5c66c01544b5ee2ca488ea922d2') in 0.031774 seconds
-  Import took 0.034588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/hydrant-01.prefab
-  artifactKey: Guid(8580a7674e9918e479022b1ee066c402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/hydrant-01.prefab using Guid(8580a7674e9918e479022b1ee066c402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd005e32c3f640792f5306d93ff58eb9c') in 0.009535 seconds
-  Import took 0.011504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02b.prefab
-  artifactKey: Guid(cfd1174d6b2b69f4d9bfc24485b421ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02b.prefab using Guid(cfd1174d6b2b69f4d9bfc24485b421ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf09219035fca9ccb1f13152039f6af') in 0.036562 seconds
-  Import took 0.039750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/ParkLamp.prefab
-  artifactKey: Guid(67572a653e8e9de4ab89371f3d500c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/ParkLamp.prefab using Guid(67572a653e8e9de4ab89371f3d500c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b1ff5a0524dcb7f8c0a7edb70b53ef') in 0.011494 seconds
-  Import took 0.013761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Parkbench-Round.prefab
-  artifactKey: Guid(6df66dfb1dee20145a3b5405164af701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Parkbench-Round.prefab using Guid(6df66dfb1dee20145a3b5405164af701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd72a35ed80fb7eb7375af2fa7a12ce82') in 0.049578 seconds
-  Import took 0.053018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02c.prefab
-  artifactKey: Guid(9c8596fa697b208488c89a05853df681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02c.prefab using Guid(9c8596fa697b208488c89a05853df681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e40807e59ed74b62d48c39f9bde669') in 0.035307 seconds
-  Import took 0.038217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-Four.prefab
-  artifactKey: Guid(53609de3a4c11e043997041fd78ceb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-Four.prefab using Guid(53609de3a4c11e043997041fd78ceb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0defc7cc0988a01660cebf21710c2055') in 0.043259 seconds
-  Import took 0.046042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/SoccerCamp.prefab
-  artifactKey: Guid(2977182ea0cc223418d9592c4320c1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/SoccerCamp.prefab using Guid(2977182ea0cc223418d9592c4320c1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d50b8fb9473c82db33aa58df685e68') in 0.030017 seconds
-  Import took 0.033027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02d.prefab
-  artifactKey: Guid(73dda77fc139de744a99846fae34fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-02d.prefab using Guid(73dda77fc139de744a99846fae34fdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57e749b1e41b513f616e768f8100039') in 0.029353 seconds
-  Import took 0.032045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-01.prefab
-  artifactKey: Guid(1f8a86790810bcd499489cc719122541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantastic City Generator/Objects/Others/Prefab/Trash-01.prefab using Guid(1f8a86790810bcd499489cc719122541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3036198027e5b7b83ed97209099e5fbd') in 0.034079 seconds
-  Import took 0.036932 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000717 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.737 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.7 MB.
-System memory in use after: 123.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1710.
-Total: 3.383792 ms (FindLiveObjects: 0.341083 ms CreateObjectMapping: 0.030584 ms MarkObjects: 2.924791 ms  DeleteObjects: 0.086042 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000706 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.843 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.4 MB.
-System memory in use after: 121.4 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1713.
-Total: 3.108375 ms (FindLiveObjects: 0.423958 ms CreateObjectMapping: 0.034833 ms MarkObjects: 2.550125 ms  DeleteObjects: 0.097667 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000573 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.664 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 119.0 MB.
-System memory in use after: 119.1 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1716.
-Total: 2.586542 ms (FindLiveObjects: 0.139333 ms CreateObjectMapping: 0.028500 ms MarkObjects: 2.345750 ms  DeleteObjects: 0.071375 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000616 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.655 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1170 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.6 MB.
-System memory in use after: 116.7 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1719.
-Total: 1.281583 ms (FindLiveObjects: 0.147666 ms CreateObjectMapping: 0.025459 ms MarkObjects: 1.042666 ms  DeleteObjects: 0.064416 ms)
-
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

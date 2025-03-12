@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Vehicles.Car;
+using TMPro;
 
 public class PhysicalSkillsCourse : MonoBehaviour
 {
     public CarController carController;  // Reference to the CarController
-    public Text feedbackText;  // UI Text for feedback
+    public TextMeshProUGUI feedbackText;  // UI Text for feedback
     public float targetSpeed1 = 15f;  // Target speed 1 (15 mph)
     public float targetSpeed2 = 40f;  // Target speed 2 (40 mph)
     public float targetSpeed3 = 55f;  // Target speed 3 (55 mph)
