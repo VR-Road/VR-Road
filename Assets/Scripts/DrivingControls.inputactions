@@ -1,0 +1,204 @@
+{
+    "name": "DrivingControls",
+    "maps": [
+        {
+            "name": "Driving",
+            "id": "d33fb7b2-8f3e-48bc-a49b-5144a13239af",
+            "actions": [
+                {
+                    "name": "Steering",
+                    "type": "Value",
+                    "id": "01e15380-2921-4321-a37f-fbd02c88939a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PaddleTopRight",
+                    "type": "Button",
+                    "id": "9fb66fd5-7fbe-4d66-bf0e-f5cd99139cdb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PaddleTopLeft",
+                    "type": "Button",
+                    "id": "514e8332-1ac3-4d73-ae3e-280dff82354e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PaddleBottomLeft",
+                    "type": "Value",
+                    "id": "788cdfb1-4765-45f0-b16f-87e53c207041",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PaddleBottomRight",
+                    "type": "Value",
+                    "id": "d4bb6096-407c-4ac9-87f5-6cf11da0f266",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Home Button",
+                    "type": "Button",
+                    "id": "ab1e5ddc-d4ed-431a-a6d0-906835871a48",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Drive Gear",
+                    "type": "Button",
+                    "id": "cee18ec8-b5e2-4851-ab17-ec9cc4ab57ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Reverse Gear",
+                    "type": "Button",
+                    "id": "ed3dd8d5-ff8e-4505-9357-71e7a24a5ac9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Brake Pedal",
+                    "type": "Value",
+                    "id": "a6fa0401-836f-411d-80e0-1a50cebb1dd0",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Accelerator Pedal",
+                    "type": "Value",
+                    "id": "19474090-f881-41f2-af96-9e66fa258c2b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5c0a8ee5-7425-49d7-a347-590cab64177c",
+                    "path": "<HID::PXN PXN-V99>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa8d0797-2e07-4145-af27-710f9678fdcd",
+                    "path": "<HID::PXN PXN-V99>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PaddleTopRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4530e864-5f4b-4116-816a-80e44fa05c74",
+                    "path": "<HID::PXN PXN-V99>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PaddleTopLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3cddc59-f577-464b-b090-5804c6b9f6bc",
+                    "path": "<HID::PXN PXN-V99>/rx",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PaddleBottomLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f9c1a08-259d-48ac-a803-88f5de6d9d57",
+                    "path": "<HID::PXN PXN-V99>/ry",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PaddleBottomRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6553b21f-3d9b-459b-9ce7-0aab11c36658",
+                    "path": "<HID::PXN PXN-V99>/button13",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Home Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc24bf8d-5a37-4f73-80f3-9798aff6ee1b",
+                    "path": "<HID::PXN PXN-V99>/button20",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fca156f6-a691-420d-ab11-ddd76a9c3d25",
+                    "path": "<HID::PXN PXN-V99>/button19",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reverse Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c0f98fd-9f54-4805-89ba-288131e34d74",
+                    "path": "<HID::PXN PXN-V99>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake Pedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "68ed2b74-52dd-4303-84cd-cab0dee1ad3d",
+                    "path": "<HID::PXN PXN-V99>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerator Pedal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

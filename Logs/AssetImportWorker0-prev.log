@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19045.5487; Version 2009; 64bit' Language: 'en' Physical Memory: 32669 MB
+OS: 'Windows 10 Home; OS build 19045.5608; Version 2009; 64bit' Language: 'en' Physical Memory: 32669 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,42 +15,43 @@ C:/Users/T_che/VR-Road
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51359
+57692
 Successfully changed project path to: C:/Users/T_che/VR-Road
 C:/Users/T_che/VR-Road
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39.46 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.81 ms.
+Refreshing native plugins compatible for Editor in 229.95 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.73 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/T_che/VR-Road/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 710 (ID=0x128b)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   
-    VRAM:     984 MB
-    Driver:   27.21.14.5671
+    VRAM:     8018 MB
+    Driver:   32.0.15.6094
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001869 seconds.
+Registered in 0.001578 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.96 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
+Refreshing native plugins compatible for Editor in 41.51 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.830 seconds
+- Completed reload, in  0.917 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001545 seconds.
+Registered in 0.001765 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.27 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.10 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
@@ -63,75 +64,56 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.713 seconds
+- Completed reload, in  0.836 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
-Unloading 1312 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.8 MB.
-System memory in use after: 82.9 MB.
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1639 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1781.
-Total: 2.375100 ms (FindLiveObjects: 0.468200 ms CreateObjectMapping: 0.039600 ms MarkObjects: 1.760900 ms  DeleteObjects: 0.104300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2111.
+Total: 2.180200 ms (FindLiveObjects: 0.219500 ms CreateObjectMapping: 0.044500 ms MarkObjects: 1.808600 ms  DeleteObjects: 0.106500 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Scenes/Practice_including_traffic.unity
+  artifactKey: Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_including_traffic.unity using Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05056098b894dfedbc13712e0875d9b5') in 0.017565 seconds
+  Import took 0.020508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 336.368336 seconds.
   path: Assets/Scenes/Nighttime.unity
   artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Nighttime.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18849b61bafc737c1a13e363eb5e4a1') in 0.018386 seconds
-  Import took 0.021134 seconds .
+Start importing Assets/Scenes/Nighttime.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a5e7b1e488cb17b7bb9955c9f0aeac') in 0.010740 seconds
+  Import took 0.013799 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 102.119347 seconds.
-  path: Assets/Scenes/Physical_skills.unity
-  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c453cd733b4cb7d573358f1d4c3c61') in 0.008477 seconds
-  Import took 0.010826 seconds .
+Received Prepare
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.9 MB.
+System memory in use after: 61.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001628 seconds.
-  path: Assets/Scenes/Physical_skills.unity
-  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c453cd733b4cb7d573358f1d4c3c61') in 0.002012 seconds
-  Import took 0.003796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 91.589553 seconds.
-  path: Assets/Scenes/Parking.unity
-  artifactKey: Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Parking.unity using Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e4e9a557917eaf8d6ed5475011ab4a') in 0.010200 seconds
-  Import took 0.012613 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.814344 seconds.
-  path: Assets/Scenes/Practice.unity
-  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Practice.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcf46093386625d82695691614f1876') in 0.009251 seconds
-  Import took 0.011576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.493909 seconds.
-  path: Assets/Scenes/Road_laws.unity
-  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Road_laws.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7354d6696ccf7ced76738d571ff2457') in 0.009680 seconds
-  Import took 0.012107 seconds .
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2111.
+Total: 2.285400 ms (FindLiveObjects: 0.204900 ms CreateObjectMapping: 0.037700 ms MarkObjects: 2.034000 ms  DeleteObjects: 0.007800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001900 seconds.
+Registered in 0.001664 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
   at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
@@ -139,15 +121,70 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.602 seconds
+- Completed reload, in  0.670 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1268 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.9 MB.
-System memory in use after: 80.0 MB.
+Unloading 1591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.5 MB.
+System memory in use after: 92.6 MB.
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1785.
-Total: 1.688500 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.037400 ms MarkObjects: 1.422500 ms  DeleteObjects: 0.011600 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2115.
+Total: 1.789400 ms (FindLiveObjects: 0.209100 ms CreateObjectMapping: 0.036000 ms MarkObjects: 1.531300 ms  DeleteObjects: 0.012300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.661 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2119.
+Total: 1.980900 ms (FindLiveObjects: 0.186800 ms CreateObjectMapping: 0.034800 ms MarkObjects: 1.742100 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.1/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1591 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2123.
+Total: 1.808900 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.556600 ms  DeleteObjects: 0.010400 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
