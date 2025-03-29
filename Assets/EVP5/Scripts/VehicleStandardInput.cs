@@ -1,12 +1,23 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using VR_Road.InputSystem;
+using TMPro;
 
 namespace EVP
 {
     public class VehicleStandardInput : MonoBehaviour
     {
+        [Header("Vehicle Controller")]
         public VehicleController target;
 
+        [Header("Gear Settings")]
+        public bool driveGear = false;
+        public bool reverseGear = false;
+
+        [Header("Gear Display")]
+        public TMP_Text gearDisplayText;
+
+        [Header("Input Settings")]
         public bool continuousForwardAndReverse = true;
 
         public enum ThrottleAndBrakeInput { SingleAxis, SeparateAxes };
@@ -26,13 +37,14 @@ namespace EVP
 
         void OnEnable()
         {
-            // Cache vehicle
             if (target == null)
                 target = GetComponent<VehicleController>();
 
-            // Initialize the new input system
             m_DrivingControls = new DrivingControls();
             m_DrivingControls.Driving.Enable();
+
+            m_DrivingControls.Driving.DriveGear.performed += ctx => ToggleDriveGear();
+            m_DrivingControls.Driving.ReverseGear.performed += ctx => ToggleReverseGear();
         }
 
         void OnDisable()
@@ -45,8 +57,10 @@ namespace EVP
                 target.handbrakeInput = 0.0f;
             }
 
-            // Disable the new input system
             m_DrivingControls?.Driving.Disable();
+
+            m_DrivingControls.Driving.DriveGear.performed -= ctx => ToggleDriveGear();
+            m_DrivingControls.Driving.ReverseGear.performed -= ctx => ToggleReverseGear();
         }
 
         void Update()
@@ -54,62 +68,122 @@ namespace EVP
             if (target == null) return;
 
             if (Input.GetKeyDown(resetVehicleKey)) m_doReset = true;
+
+            UpdateGearDisplay();
         }
 
        void FixedUpdate()
 {
     if (target == null) return;
 
-    // Read the user input from the new input system
-    float steerInput = m_DrivingControls.Driving.Steering.ReadValue<float>();
+    // Original input reading (keeping your -1 inversion)
+    float rawSteerInput = m_DrivingControls.Driving.Steering.ReadValue<float>();
+    rawSteerInput *= -1;
+
+    // Original resting state check
+    if (rawSteerInput >= 0.99f || rawSteerInput <= -0.99f)
+    {
+        rawSteerInput = 0.0f;
+    }
+
+    // FIXED VERSION - PROPER DIRECTION HANDLING
+    // Convert input range while preserving direction
+    float curvedSteer;
+    if (rawSteerInput > 0f)
+    {
+        // Right turn (input 0→+1 becomes output +1→0)
+        curvedSteer = 1f - rawSteerInput;
+    }
+    else if (rawSteerInput < 0f)
+    {
+        // Left turn (input -1→0 becomes output 0→-1)
+        curvedSteer = -1f - rawSteerInput;
+    }
+    else
+    {
+        // Centered
+        curvedSteer = 0f;
+    }
+
+    // Add realistic steering effects based on speed
+    float speed = target.speed; // Use the available speed property
+    float speedFactor = Mathf.InverseLerp(0.1f, 20.0f, Mathf.Abs(speed));
+    
+    // Reduce steering sensitivity at higher speeds
+    float steerMagnitude = Mathf.Abs(curvedSteer);
+    float curvedMagnitude = steerMagnitude * (1.0f - speedFactor * 0.7f); // Reduce steering by up to 70% at high speed
+    curvedSteer = Mathf.Sign(curvedSteer) * curvedMagnitude;
+
+    // Add counter-steering effect when drifting (using speedAngle as an approximation)
+    float driftFactor = Mathf.Clamp01((Mathf.Abs(target.speedAngle) - 10f) / 20f); // Adjust values to match your vehicle
+    curvedSteer *= (1f + driftFactor * Mathf.Sign(target.speedAngle) * Mathf.Sign(curvedSteer));
+
+    // Original smoothing with speed-based adjustment
+    float smoothFactor = Mathf.Lerp(5f, 10f, speedFactor); // Slower smoothing at low speeds
+    target.steerInput = Mathf.Lerp(target.steerInput, curvedSteer, Time.fixedDeltaTime * smoothFactor);
+
+    // REST OF YOUR ORIGINAL CODE (unchanged)
     float brakeInput = m_DrivingControls.Driving.BrakePedal.ReadValue<float>();
     float throttleInput = m_DrivingControls.Driving.AcceleratorPedal.ReadValue<float>();
 
-    // Debugging: Print raw inputs
-    Debug.Log($"Raw Steer Input: {steerInput}, Raw Throttle Input: {throttleInput}, Raw Brake Input: {brakeInput}");
+    if (brakeInput == -1.0f) brakeInput = 0.0f;
+    else brakeInput = Mathf.Clamp(brakeInput, -0.99f, 0.99f);
 
-    // Handle steering input
-    if (steerInput == -1.0f)
+    if (throttleInput == -1.0f) throttleInput = 0.0f;
+    else throttleInput = Mathf.Clamp(throttleInput, -0.99f, 0.99f);
+
+    if (driveGear)
     {
-        steerInput = 0.0f; // Resting state, no steering
+        target.throttleInput = throttleInput;
+        target.brakeInput = brakeInput;
     }
-
-    // Invert the steering direction
-    steerInput *= -1;
-
-    // Handle brake and throttle inputs
-    if (brakeInput == -1.0f)
+    else if (reverseGear)
     {
-        brakeInput = 0.0f; // Resting state, no braking
-    }
-    else
-    {
-        brakeInput = Mathf.Clamp(brakeInput, -0.99f, 0.99f); // Clamp to avoid exact -1 or 1
-    }
-
-    if (throttleInput == -1.0f)
-    {
-        throttleInput = 0.0f; // Resting state, no throttle
+        target.throttleInput = -throttleInput;
+        target.brakeInput = brakeInput;
     }
     else
     {
-        throttleInput = Mathf.Clamp(throttleInput, -0.99f, 0.99f); // Clamp to avoid exact -1 or 1
+        target.throttleInput = 0.0f;
+        target.brakeInput = brakeInput;
     }
 
-    // Debugging: Print final inputs
-    Debug.Log($"Final Steer Input: {steerInput}, Final Throttle Input: {throttleInput}, Final Brake Input: {brakeInput}");
-
-    // Apply input to vehicle
-    target.steerInput = steerInput;
-    target.throttleInput = throttleInput;
-    target.brakeInput = brakeInput;
-
-    // Do a vehicle reset
     if (m_doReset)
     {
         target.ResetVehicle();
         m_doReset = false;
     }
 }
+
+        void ToggleDriveGear()
+        {
+            driveGear = !driveGear;
+            if (driveGear) reverseGear = false;
+        }
+
+        void ToggleReverseGear()
+        {
+            reverseGear = !reverseGear;
+            if (reverseGear) driveGear = false;
+        }
+
+        void UpdateGearDisplay()
+        {
+            if (gearDisplayText != null)
+            {
+                if (driveGear)
+                {
+                    gearDisplayText.text = "D";
+                }
+                else if (reverseGear)
+                {
+                    gearDisplayText.text = "R";
+                }
+                else
+                {
+                    gearDisplayText.text = "P";
+                }
+            }
+        }
     }
 }
