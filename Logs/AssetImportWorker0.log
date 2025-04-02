@@ -1,0 +1,1456 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/tonyche/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62560
+Successfully changed project path to: /Users/tonyche/My project
+/Users/tonyche/My project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 155.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/tonyche/My project/Assets
+GfxDevice: creating device client; threaded=0
+2025-04-02 01:14:46.732 Unity[71901:3196647] (null) preferred device: Apple M1 (high power)
+2025-04-02 01:14:46.733 Unity[71901:3196647] Metal devices available: 1
+2025-04-02 01:14:46.733 Unity[71901:3196647] 0: Apple M1 (high power)
+2025-04-02 01:14:46.733 Unity[71901:3196647] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56901
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001520 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 48.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.792 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001079 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 291.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.437 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 1.73 seconds
+Refreshing native plugins compatible for Editor in 5.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1639 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.7 MB.
+System memory in use after: 85.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2110.
+Total: 17.140375 ms (FindLiveObjects: 0.943208 ms CreateObjectMapping: 0.059167 ms MarkObjects: 15.484541 ms  DeleteObjects: 0.648209 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/DrivingControls.cs
+  artifactKey: Guid(6defec3cc6852964382c43c92a47f3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DrivingControls.cs using Guid(6defec3cc6852964382c43c92a47f3ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f599c4cf955bae67f1b46c937f172614') in 0.673513 seconds
+  Import took 0.684213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 885.969689 seconds.
+  path: Assets/Scenes/Highway.unity
+  artifactKey: Guid(8795a36539fb245d09673f02284a603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Highway.unity using Guid(8795a36539fb245d09673f02284a603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bf631a2837e7db9a33d8d82a1afd43') in 0.071222 seconds
+  Import took 0.087867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.700608 seconds.
+  path: Assets/Scenes/Editing_Testing.unity
+  artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Editing_Testing.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f8caef956b2bd5783b0158bdecce4f') in 0.003343 seconds
+  Import took 0.013844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.910384 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11646d9470503f5113efb8f59a45218b') in 0.002058 seconds
+  Import took 0.008157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.833511 seconds.
+  path: Assets/Scenes/Practice_no_traffic.unity
+  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_no_traffic.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d803a747855045c1f0e11295b70808') in 0.006315 seconds
+  Import took 0.028221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004129 seconds.
+  path: Assets/Scenes/Practice_no_traffic.unity
+  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_no_traffic.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d803a747855045c1f0e11295b70808') in 0.001037 seconds
+  Import took 0.005637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.198391 seconds.
+  path: Assets/Scenes/Practice_including_traffic.unity
+  artifactKey: Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_including_traffic.unity using Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466474348db737a4f9f752269e0f0fed') in 0.009705 seconds
+  Import took 0.026605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.006546 seconds.
+  path: Assets/Scenes/Road_laws.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Road_laws.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a55dd9c616854e042e62837ff81756') in 0.013772 seconds
+  Import took 0.033239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.286350 seconds.
+  path: Assets/Scenes/Parking.unity
+  artifactKey: Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Parking.unity using Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1e6b613d228a5ea08090acc7c2eef1') in 0.009494 seconds
+  Import took 0.035212 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002194 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.046 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1592 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.2 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2114.
+Total: 2.971583 ms (FindLiveObjects: 0.289042 ms CreateObjectMapping: 0.050375 ms MarkObjects: 2.563958 ms  DeleteObjects: 0.067583 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002776 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.976 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1592 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.4 MB.
+System memory in use after: 78.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2118.
+Total: 1.595208 ms (FindLiveObjects: 0.167958 ms CreateObjectMapping: 0.037292 ms MarkObjects: 1.323417 ms  DeleteObjects: 0.065709 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.761 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1592 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.6 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2122.
+Total: 1.471666 ms (FindLiveObjects: 0.136583 ms CreateObjectMapping: 0.034708 ms MarkObjects: 1.237083 ms  DeleteObjects: 0.062333 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002182 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.974 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.9 MB.
+System memory in use after: 70.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2127.
+Total: 5.264166 ms (FindLiveObjects: 0.265000 ms CreateObjectMapping: 0.056583 ms MarkObjects: 4.865625 ms  DeleteObjects: 0.075958 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.996 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.2 MB.
+System memory in use after: 67.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2131.
+Total: 3.792125 ms (FindLiveObjects: 0.671875 ms CreateObjectMapping: 0.037208 ms MarkObjects: 2.878083 ms  DeleteObjects: 0.203292 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.933 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.4 MB.
+System memory in use after: 63.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2135.
+Total: 1.724875 ms (FindLiveObjects: 0.211042 ms CreateObjectMapping: 0.036500 ms MarkObjects: 1.403333 ms  DeleteObjects: 0.072875 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002931 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.921 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 59.8 MB.
+System memory in use after: 59.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2139.
+Total: 1.541792 ms (FindLiveObjects: 0.183291 ms CreateObjectMapping: 0.032625 ms MarkObjects: 1.252417 ms  DeleteObjects: 0.071917 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002403 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.881 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.1 MB.
+System memory in use after: 56.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2143.
+Total: 2.832333 ms (FindLiveObjects: 0.327042 ms CreateObjectMapping: 0.037708 ms MarkObjects: 2.394583 ms  DeleteObjects: 0.072084 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002069 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.877 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.4 MB.
+System memory in use after: 52.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2147.
+Total: 3.518791 ms (FindLiveObjects: 0.348958 ms CreateObjectMapping: 0.036667 ms MarkObjects: 3.047292 ms  DeleteObjects: 0.084917 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002434 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.789 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 48.7 MB.
+System memory in use after: 48.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 3.179250 ms (FindLiveObjects: 0.177417 ms CreateObjectMapping: 0.033458 ms MarkObjects: 2.864292 ms  DeleteObjects: 0.102708 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002287 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.819 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.0 MB.
+System memory in use after: 45.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2155.
+Total: 1.758792 ms (FindLiveObjects: 0.344917 ms CreateObjectMapping: 0.035416 ms MarkObjects: 1.307584 ms  DeleteObjects: 0.069833 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5332.611475 seconds.
+  path: Assets/Scripts/DrivingControls.inputactions
+  artifactKey: Guid(3b3acb8a6caf2684e959bb3497c397ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DrivingControls.inputactions using Guid(3b3acb8a6caf2684e959bb3497c397ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fac952dbc7f4d4f38f5e9d13c25d40') in 1.239029 seconds
+  Import took 1.281507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.561285 seconds.
+  path: Assets/Scripts/DrivingControls.inputactions
+  artifactKey: Guid(3b3acb8a6caf2684e959bb3497c397ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DrivingControls.inputactions using Guid(3b3acb8a6caf2684e959bb3497c397ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befa53fe5bec2bb4b2a66b6cf945f78f') in 0.087985 seconds
+  Import took 0.100336 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002331 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.938 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 44.9 MB.
+System memory in use after: 45.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2159.
+Total: 4.316709 ms (FindLiveObjects: 0.232291 ms CreateObjectMapping: 0.036333 ms MarkObjects: 3.947958 ms  DeleteObjects: 0.098375 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002793 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.865 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.1 MB.
+System memory in use after: 41.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2163.
+Total: 2.097125 ms (FindLiveObjects: 0.149125 ms CreateObjectMapping: 0.037375 ms MarkObjects: 1.847041 ms  DeleteObjects: 0.062500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.982 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 37.5 MB.
+System memory in use after: 37.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2167.
+Total: 2.813875 ms (FindLiveObjects: 0.280042 ms CreateObjectMapping: 0.035500 ms MarkObjects: 2.423792 ms  DeleteObjects: 0.073583 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.990 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 33.8 MB.
+System memory in use after: 33.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2171.
+Total: 1.514833 ms (FindLiveObjects: 0.171333 ms CreateObjectMapping: 0.033125 ms MarkObjects: 1.243500 ms  DeleteObjects: 0.065875 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2530.378654 seconds.
+  path: Assets/Scenes/Editing_Testing.unity
+  artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Editing_Testing.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c7280e1c78f53760a61bfb8dac2bdc') in 0.035779 seconds
+  Import took 0.042652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027654 seconds.
+  path: Assets/Scenes/Editing_Testing.unity
+  artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Editing_Testing.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c7280e1c78f53760a61bfb8dac2bdc') in 0.001318 seconds
+  Import took 0.003879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.005622 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9019f6877bd3bbd9a504c31df5a81fd') in 0.017131 seconds
+  Import took 0.021163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.984740 seconds.
+  path: Assets/Scenes/Nighttime_practice.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nighttime_practice.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1582df723cde38f03537168f89ac3e3b') in 0.007589 seconds
+  Import took 0.023589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.360863 seconds.
+  path: Assets/Scenes/Nighttime_practice.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nighttime_practice.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb26b24b79204c68791a893114e89c5') in 0.053447 seconds
+  Import took 0.082174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.032287 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed
+  artifactKey: Guid(7f34c847a137d4c448bbc0ac0bfec98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed using Guid(7f34c847a137d4c448bbc0ac0bfec98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4c09ce61faf74d74f86933466eb6fd') in 0.008150 seconds
+  Import took 0.033312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.346541 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX
+  artifactKey: Guid(c2a693b8666654a409f8b0e9f2f4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX using Guid(c2a693b8666654a409f8b0e9f2f4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82aa1ec67c36105446ac195ed33e605d') in 0.002816 seconds
+  Import took 0.008710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.188697 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01.fbx
+  artifactKey: Guid(a09a57af025e9564aa12719570c6c95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01.fbx using Guid(a09a57af025e9564aa12719570c6c95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a0c25b603ca2214bda5fa6db4ab8d3') in 0.820634 seconds
+  Import took 0.827229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-01.fbx
+  artifactKey: Guid(1f7ea7c53e2640a4699623f4efbcbeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-01.fbx using Guid(1f7ea7c53e2640a4699623f4efbcbeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffbc3cceb2baa899190edd208a468d1') in 0.168278 seconds
+  Import took 0.173334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-08.fbx
+  artifactKey: Guid(cc6c4a33aabc7744babb182cf6ba10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-08.fbx using Guid(cc6c4a33aabc7744babb182cf6ba10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fed8f3d50c68fb066f0907be43559bb') in 0.017112 seconds
+  Import took 0.020490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Fwater-01.fbx
+  artifactKey: Guid(ac29704a7ff96704abc29981a3ffecc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Fwater-01.fbx using Guid(ac29704a7ff96704abc29981a3ffecc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d872b0fa913c84e0ca66a34e53f3763') in 0.043264 seconds
+  Import took 0.048193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-03.fbx
+  artifactKey: Guid(783acfe66baad17459ea6d73cf5c6fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-03.fbx using Guid(783acfe66baad17459ea6d73cf5c6fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88f1dd1955f2fd53556fc48de7b737b4') in 0.037072 seconds
+  Import took 0.041891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04c.fbx
+  artifactKey: Guid(dec9d404cb2d6e643ac4ea1843004e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04c.fbx using Guid(dec9d404cb2d6e643ac4ea1843004e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1113c85de7d022bea9d2da6dfb74bc') in 0.036412 seconds
+  Import took 0.040666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-02.fbx
+  artifactKey: Guid(500f0433604227541b0fe40b82425bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-02.fbx using Guid(500f0433604227541b0fe40b82425bdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f812d7b2cb53fa23081d8e50650d89') in 0.034452 seconds
+  Import took 0.039903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-03.fbx
+  artifactKey: Guid(ca8909f5d67e89e4e942a7a35a8c3c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-03.fbx using Guid(ca8909f5d67e89e4e942a7a35a8c3c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783efca1ef00a3b7f040d512e1a1e281') in 0.047079 seconds
+  Import took 0.052243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-01.fbx
+  artifactKey: Guid(74d3f3ce56cdea844a87f1869860a57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-01.fbx using Guid(74d3f3ce56cdea844a87f1869860a57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9932ba0391d2ab11d62abfab6b0ac43') in 0.049599 seconds
+  Import took 0.054474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-05.fbx
+  artifactKey: Guid(05b93a9a7f2f6ee4d86a56b2a22e706f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-05.fbx using Guid(05b93a9a7f2f6ee4d86a56b2a22e706f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5448e041748fd5aaf957d375a69e68') in 0.034817 seconds
+  Import took 0.039705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-01.fbx
+  artifactKey: Guid(ece9eb69f53bb6142a8fc56bbe0c9bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-01.fbx using Guid(ece9eb69f53bb6142a8fc56bbe0c9bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a2e7d8fede26221ecec753df290688') in 0.034186 seconds
+  Import took 0.038993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-02.fbx
+  artifactKey: Guid(4b5aa39b72e4fdf4fa01f663067ceb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-02.fbx using Guid(4b5aa39b72e4fdf4fa01f663067ceb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9c726a95d01ac74f57d966ef4c0d2c') in 0.035331 seconds
+  Import took 0.040001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-04.fbx
+  artifactKey: Guid(b40c6336e49477d44b12dc4eebc309aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-04.fbx using Guid(b40c6336e49477d44b12dc4eebc309aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f4228331a26531c5cf713e5824825d') in 0.053664 seconds
+  Import took 0.057617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-08.fbx
+  artifactKey: Guid(d9858ad513e7ddc4a83ebbea81bd8a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-08.fbx using Guid(d9858ad513e7ddc4a83ebbea81bd8a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca9a360feef92107f28067605e859c5') in 0.034164 seconds
+  Import took 0.039048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-09.fbx
+  artifactKey: Guid(7945b4432e845d54d935c7f681fb96a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-09.fbx using Guid(7945b4432e845d54d935c7f681fb96a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b96a0082c085348ecc2d62621b6d87a') in 0.045496 seconds
+  Import took 0.049572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07.fbx
+  artifactKey: Guid(fd764d7ff467f8a47bf0105bd3bdb236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07.fbx using Guid(fd764d7ff467f8a47bf0105bd3bdb236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a520decfbd94b52d8053d73b0eb879') in 0.033208 seconds
+  Import took 0.037954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01b.fbx
+  artifactKey: Guid(5286fb85f6cb4b043aafd72a4aabbc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01b.fbx using Guid(5286fb85f6cb4b043aafd72a4aabbc82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1dc8aa5700295f444fcf73fc4a3ba0') in 0.033384 seconds
+  Import took 0.037139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04.fbx
+  artifactKey: Guid(85f94eabd7ac7a64da0d9ef2c24dfbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04.fbx using Guid(85f94eabd7ac7a64da0d9ef2c24dfbfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399bddde7385bf8405fe7abd40c85c4f') in 0.033548 seconds
+  Import took 0.037669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-07.fbx
+  artifactKey: Guid(5fa21523479cdec43961c0eb4e1a0f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-07.fbx using Guid(5fa21523479cdec43961c0eb4e1a0f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7dbd303abf67bf4bb48ace473ef0681') in 0.012162 seconds
+  Import took 0.015019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-01b.fbx
+  artifactKey: Guid(4ed9e03189000a44793364aed3e5419c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-01b.fbx using Guid(4ed9e03189000a44793364aed3e5419c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd551f1c93b747c2b1663de3790916b80') in 0.049756 seconds
+  Import took 0.054207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04m.fbx
+  artifactKey: Guid(75c1dd135e2d0bd4a946c3aeb9d68292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-04m.fbx using Guid(75c1dd135e2d0bd4a946c3aeb9d68292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0901c22ae2a770a6b89993507e32317c') in 0.053209 seconds
+  Import took 0.060411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01c.fbx
+  artifactKey: Guid(fa5389b54ee75d84298cfd1127aa2019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-01c.fbx using Guid(fa5389b54ee75d84298cfd1127aa2019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc8e38f00c091975750504a55167d68') in 0.046263 seconds
+  Import took 0.049787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07g.fbx
+  artifactKey: Guid(d5655119137e0fd45910d337de2f5ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07g.fbx using Guid(d5655119137e0fd45910d337de2f5ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4a9a4a2e82c59f5574a51d38f288ce') in 0.045822 seconds
+  Import took 0.050617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-04.fbx
+  artifactKey: Guid(4638da80266b79a45bff3f89ab192804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-04.fbx using Guid(4638da80266b79a45bff3f89ab192804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd52b309ce113cc75a0ddc5bd534b566') in 0.036246 seconds
+  Import took 0.040616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-02.fbx
+  artifactKey: Guid(6946eb5c1782aa64e82ef33cba003b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-02.fbx using Guid(6946eb5c1782aa64e82ef33cba003b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cf1bfdd9464317d58ef63db4ebc7a6') in 0.050598 seconds
+  Import took 0.054668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07r.fbx
+  artifactKey: Guid(2e6d8357c9836f341b852fb70769e36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07r.fbx using Guid(2e6d8357c9836f341b852fb70769e36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0223f2dd6abf5f3e280d6cd5cf6a790') in 0.031709 seconds
+  Import took 0.036106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-06.fbx
+  artifactKey: Guid(eb964c0d005136241b85edcb55def8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-06.fbx using Guid(eb964c0d005136241b85edcb55def8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af196d3aaf19693e103cb8b96e1a2ca') in 0.044190 seconds
+  Import took 0.048068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07c.fbx
+  artifactKey: Guid(1580bb82720624e41afd3d765e6e2818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-07c.fbx using Guid(1580bb82720624e41afd3d765e6e2818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd079389524ccef7808d0f9fe072c8fd') in 0.039310 seconds
+  Import took 0.043495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-05.fbx
+  artifactKey: Guid(51db0d48924cb8240942a6654eb0ad13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Vase-05.fbx using Guid(51db0d48924cb8240942a6654eb0ad13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f028f2c6d3ecefd04b108f81c1bbd4b0') in 0.031358 seconds
+  Import took 0.035454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-03.fbx
+  artifactKey: Guid(f42cdab9bf68fd44fb856c9a158cf8ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-03.fbx using Guid(f42cdab9bf68fd44fb856c9a158cf8ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2edcffddd434dfdfaf7354aa68f21a') in 0.046879 seconds
+  Import took 0.051063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-05.fbx
+  artifactKey: Guid(ade5b14acf08c1847b8b92a5f1957bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Park-05.fbx using Guid(ade5b14acf08c1847b8b92a5f1957bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68081bb00b3e9246ea4bf1b8ffa17f2c') in 0.048547 seconds
+  Import took 0.053297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-Vase.fbx
+  artifactKey: Guid(36ef587e7605673499e6e38e3b8ce5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-Vase.fbx using Guid(36ef587e7605673499e6e38e3b8ce5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ea0774e1c8cadfe24657a1c6144404') in 0.038669 seconds
+  Import took 0.043739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-03m.fbx
+  artifactKey: Guid(d33b85bc08c87e54287eff47cc09a554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-03m.fbx using Guid(d33b85bc08c87e54287eff47cc09a554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c4458bcf33c6d5f5aabf5be5e725d0') in 0.036113 seconds
+  Import took 0.041928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-02.fbx
+  artifactKey: Guid(d537a5bfd5180e5468e39fabd587f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Garden-02.fbx using Guid(d537a5bfd5180e5468e39fabd587f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e25c9e7999a495dc23bd1b68140440d') in 0.051615 seconds
+  Import took 0.056267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-03.fbx
+  artifactKey: Guid(6e57986e97bd76249ac1e0ca2651dc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Flowerbed/FBX/Flowerbed-03.fbx using Guid(6e57986e97bd76249ac1e0ca2651dc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26362edfcdfe5b1d8e44b7b9638f14ad') in 0.033629 seconds
+  Import took 0.037722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 331.088570 seconds.
+  path: Assets/Fantastic City Generator/Textures/Materials/Wins-Night.mat
+  artifactKey: Guid(cd4280bc34c3e3b45ba5da1e7d42375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Textures/Materials/Wins-Night.mat using Guid(cd4280bc34c3e3b45ba5da1e7d42375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ab8c22530c866f05244f1695835320') in 0.336391 seconds
+  Import took 0.348446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000594 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BR-032.fbx
+  artifactKey: Guid(71b063cb15c86a2418851df8f5617981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BR-032.fbx using Guid(71b063cb15c86a2418851df8f5617981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d9cb14089f0f8184ad4b8734ba143e') in 0.089907 seconds
+  Import took 0.114595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Fantastic City Generator/Textures/Materials/Wins-02-Night.mat
+  artifactKey: Guid(b738ce189955c8d48998ef0f30ffd7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Textures/Materials/Wins-02-Night.mat using Guid(b738ce189955c8d48998ef0f30ffd7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfcd4023a1b8ca23e93b1990a5dbefb') in 0.061256 seconds
+  Import took 0.073152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.190817 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-034.fbx
+  artifactKey: Guid(21754ab09d18e9f438de7128e01aaaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-034.fbx using Guid(21754ab09d18e9f438de7128e01aaaaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f121885dace713c30cf1a7d5f0c14cc') in 0.045542 seconds
+  Import took 0.049635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-020.fbx
+  artifactKey: Guid(58c012e6237e4c946a4ff7de774a9e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-020.fbx using Guid(58c012e6237e4c946a4ff7de774a9e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc4e32c1a0d56cf8140a95746162cf6') in 0.050597 seconds
+  Import took 0.054270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050286 seconds.
+  path: Assets/Fantastic City Generator/Textures/Materials/Wins-02.mat
+  artifactKey: Guid(35bf375a0cec2a34e88b5c18a3cd7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Textures/Materials/Wins-02.mat using Guid(35bf375a0cec2a34e88b5c18a3cd7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e08641d6a73a0ac2b3992154e0c971') in 0.015299 seconds
+  Import took 0.019206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.940613 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-039.fbx
+  artifactKey: Guid(6b64e9e49b79ef44ca95cf60472e6c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-039.fbx using Guid(6b64e9e49b79ef44ca95cf60472e6c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12994714dcaa0fafc60eccde8af9542b') in 0.041601 seconds
+  Import took 0.046304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-045.fbx
+  artifactKey: Guid(b2a2faaa897073149b06e75b69910fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-045.fbx using Guid(b2a2faaa897073149b06e75b69910fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82276bb89e02cb3e1141454c031d5865') in 0.033964 seconds
+  Import took 0.037503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.114491 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-044.fbx
+  artifactKey: Guid(f4c492ddf7165f14d92058a919fda144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-044.fbx using Guid(f4c492ddf7165f14d92058a919fda144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6a774635ebb6bdc0faa4788d450ba5') in 0.045809 seconds
+  Import took 0.049182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Fantastic City Generator/Buildings/FBX/BC-041.fbx
+  artifactKey: Guid(9700e80fc6a926e4287359495306aa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Buildings/FBX/BC-041.fbx using Guid(9700e80fc6a926e4287359495306aa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b177812d7ec780e6069038ff36a197ea') in 0.040205 seconds
+  Import took 0.043907 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 39.7 MB.
+System memory in use after: 39.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2218.
+Total: 1.581292 ms (FindLiveObjects: 0.153584 ms CreateObjectMapping: 0.032334 ms MarkObjects: 1.320166 ms  DeleteObjects: 0.072542 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003753 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.876 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 35.9 MB.
+System memory in use after: 35.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2222.
+Total: 1.526083 ms (FindLiveObjects: 0.157583 ms CreateObjectMapping: 0.035958 ms MarkObjects: 1.261417 ms  DeleteObjects: 0.070291 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006094 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.098 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 32.1 MB.
+System memory in use after: 32.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2226.
+Total: 3.436500 ms (FindLiveObjects: 0.357417 ms CreateObjectMapping: 0.032250 ms MarkObjects: 2.960709 ms  DeleteObjects: 0.084708 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1323.345749 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs
+  artifactKey: Guid(0a3a45a328205d54fbef953b95c28e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs using Guid(0a3a45a328205d54fbef953b95c28e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a174ac169233739f3e6005b1389e923') in 0.053121 seconds
+  Import took 0.069228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.600758 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab
+  artifactKey: Guid(15b11eefcb7427b488a6076d79f87110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab using Guid(15b11eefcb7427b488a6076d79f87110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311e1fda6dac235ae05f3692337badf6') in 0.004566 seconds
+  Import took 0.011029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.183272 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-F.prefab
+  artifactKey: Guid(320110790daf5be4ab25e0aee0d0c3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-F.prefab using Guid(320110790daf5be4ab25e0aee0d0c3c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48dfe1e8d9e1da94a1f1e7c759b53a3') in 0.354730 seconds
+  Import took 0.358727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Right.prefab
+  artifactKey: Guid(d417086560fdffc4ba0375b6177bb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Right.prefab using Guid(d417086560fdffc4ba0375b6177bb3e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d612ba00b462e6131e12e4d2d084619') in 0.070332 seconds
+  Import took 0.074940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FR.prefab
+  artifactKey: Guid(0b940ffa2f8532c479aed2cdbb445c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FR.prefab using Guid(0b940ffa2f8532c479aed2cdbb445c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a917563bb71ecda7d5244b293b87ffbf') in 0.008953 seconds
+  Import took 0.011830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Bus Stop.prefab
+  artifactKey: Guid(43224fa894071bb438b852c84247b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Bus Stop.prefab using Guid(43224fa894071bb438b852c84247b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096b9bac0273afecb781c6c6f21d940a') in 0.008760 seconds
+  Import took 0.012505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/pedestrian.prefab
+  artifactKey: Guid(2d04bc45f3cb4444dacc586dcc19ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/pedestrian.prefab using Guid(2d04bc45f3cb4444dacc586dcc19ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf305b0e65eeac12165cfe2749ddec86') in 0.032625 seconds
+  Import took 0.036302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FL.prefab
+  artifactKey: Guid(675e687128a697a4297f9b50153b9952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-FL.prefab using Guid(675e687128a697a4297f9b50153b9952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cd1f2d04f449516ca9377c86a2cf96') in 0.006522 seconds
+  Import took 0.009423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-R.prefab
+  artifactKey: Guid(2ea68929407c1864b90527cb5d052f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-R.prefab using Guid(2ea68929407c1864b90527cb5d052f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da62aee2bcfa9494e737ef185f8ad41') in 0.008508 seconds
+  Import took 0.012041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/ExtrutureMetalic.prefab
+  artifactKey: Guid(aeb89d1ab15bed24f8ca218db34bbd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/ExtrutureMetalic.prefab using Guid(aeb89d1ab15bed24f8ca218db34bbd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d28351bba0b55d90f9aca3f5642d24') in 0.042169 seconds
+  Import took 0.046835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Left.prefab
+  artifactKey: Guid(939989b957a7d9f40a4e23c8b2e2501f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Oneway-Left.prefab using Guid(939989b957a7d9f40a4e23c8b2e2501f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daeffb1273b69f0a65273258a9cd3012') in 0.035648 seconds
+  Import took 0.041175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/do_not_enter.prefab
+  artifactKey: Guid(d6dd04fe968e8f9419670bfde336cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/do_not_enter.prefab using Guid(d6dd04fe968e8f9419670bfde336cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815b0f930fbca49e62c59e1898fae463') in 0.036737 seconds
+  Import took 0.042395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-L.prefab
+  artifactKey: Guid(97d02bd101360fb41b28d353ad648c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantastic City Generator/Objects/Signs/Prefab/Arrow-L.prefab using Guid(97d02bd101360fb41b28d353ad648c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46217af742b26d3b6844b9027f724ff6') in 0.007362 seconds
+  Import took 0.010172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 166.143269 seconds.
+  path: Assets/Scenes/Nighttime_practice.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nighttime_practice.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645a76b3940e8cae123e50baadf1b8c3') in 0.012226 seconds
+  Import took 0.057109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.370727 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7577058e966458e1cff6d30abdfb7920') in 0.001905 seconds
+  Import took 0.006925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.935563 seconds.
+  path: Assets/Scenes/Practice_including_traffic.unity
+  artifactKey: Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_including_traffic.unity using Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b43b8bc7a640f44f5a913fd33c1cb0f') in 0.250954 seconds
+  Import took 0.254899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 513.274741 seconds.
+  path: Assets/Scenes/Parking.unity
+  artifactKey: Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Parking.unity using Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52091392daf3de430abc9583d9c2579c') in 0.127903 seconds
+  Import took 0.163415 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002231 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.153 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 32.2 MB.
+System memory in use after: 32.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2232.
+Total: 3.474792 ms (FindLiveObjects: 0.486417 ms CreateObjectMapping: 0.056750 ms MarkObjects: 2.852667 ms  DeleteObjects: 0.077708 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001695 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.918 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 28.4 MB.
+System memory in use after: 28.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2236.
+Total: 3.035333 ms (FindLiveObjects: 0.303125 ms CreateObjectMapping: 0.034500 ms MarkObjects: 2.615792 ms  DeleteObjects: 0.080667 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002149 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.900 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 24.7 MB.
+System memory in use after: 24.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2240.
+Total: 2.781042 ms (FindLiveObjects: 0.316958 ms CreateObjectMapping: 0.036000 ms MarkObjects: 2.344792 ms  DeleteObjects: 0.082333 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005142 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.959 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 20.9 MB.
+System memory in use after: 21.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2244.
+Total: 1.718375 ms (FindLiveObjects: 0.371083 ms CreateObjectMapping: 0.037042 ms MarkObjects: 1.236000 ms  DeleteObjects: 0.073125 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 390.122671 seconds.
+  path: Assets/Scenes/Practice_no_traffic.unity
+  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_no_traffic.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5aa19bc764b4b3fae4cd7a29b03540') in 0.087943 seconds
+  Import took 0.098068 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003583 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.836 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 17.1 MB.
+System memory in use after: 17.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 1.541042 ms (FindLiveObjects: 0.195125 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.238042 ms  DeleteObjects: 0.072708 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.579066 seconds.
+  path: Assets/Scenes/Parking.unity
+  artifactKey: Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Parking.unity using Guid(89af7040ed9bc4f598b349d6fdaa1bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8292e7eef279169110c865a276aae838') in 0.125222 seconds
+  Import took 0.141945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.499194 seconds.
+  path: Assets/Scenes/Nighttime_practice.unity
+  artifactKey: Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nighttime_practice.unity using Guid(955729b053d804bbdaeba1ef4a42388f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd84dc11c4139c0e96459cd997f3dc9b') in 0.278993 seconds
+  Import took 0.285691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.129830 seconds.
+  path: Assets/Scenes/Physical_skills.unity
+  artifactKey: Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Physical_skills.unity using Guid(5de19e064bb6843d6888e3c7e396cedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba93e270f5a56fe4d266211cd0699153') in 0.005540 seconds
+  Import took 0.014892 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003800 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.939 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 13.4 MB.
+System memory in use after: 13.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2253.
+Total: 3.603083 ms (FindLiveObjects: 0.303291 ms CreateObjectMapping: 0.035250 ms MarkObjects: 3.188875 ms  DeleteObjects: 0.074667 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002159 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.877 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 9.6 MB.
+System memory in use after: 9.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2257.
+Total: 3.829333 ms (FindLiveObjects: 0.540292 ms CreateObjectMapping: 0.041000 ms MarkObjects: 3.147500 ms  DeleteObjects: 0.099250 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002207 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.826 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 5.8 MB.
+System memory in use after: 5.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2261.
+Total: 2.537125 ms (FindLiveObjects: 0.321500 ms CreateObjectMapping: 0.034416 ms MarkObjects: 2.046417 ms  DeleteObjects: 0.133666 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.172 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 2.0 MB.
+System memory in use after: 2.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2265.
+Total: 3.302916 ms (FindLiveObjects: 0.335792 ms CreateObjectMapping: 0.033000 ms MarkObjects: 2.866583 ms  DeleteObjects: 0.066625 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002119 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.966 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 3.872459 ms (FindLiveObjects: 0.487792 ms CreateObjectMapping: 0.043667 ms MarkObjects: 3.236916 ms  DeleteObjects: 0.102667 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.837 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2273.
+Total: 3.368500 ms (FindLiveObjects: 0.505667 ms CreateObjectMapping: 0.035166 ms MarkObjects: 2.751250 ms  DeleteObjects: 0.074125 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002434 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.901 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2277.
+Total: 3.507917 ms (FindLiveObjects: 0.332542 ms CreateObjectMapping: 0.038292 ms MarkObjects: 3.056958 ms  DeleteObjects: 0.079250 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2268.211654 seconds.
+  path: Assets/Scenes/Editing_Testing.unity
+  artifactKey: Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Editing_Testing.unity using Guid(b8fbcdd3e9046435d9c667e13f4db1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618cc8109eae37ef6469363bc807fb1a') in 0.079772 seconds
+  Import took 0.097938 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001962 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.930 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2281.
+Total: 3.109750 ms (FindLiveObjects: 0.175500 ms CreateObjectMapping: 0.036333 ms MarkObjects: 2.823958 ms  DeleteObjects: 0.073042 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.803 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2285.
+Total: 2.643583 ms (FindLiveObjects: 0.377584 ms CreateObjectMapping: 0.037208 ms MarkObjects: 2.149208 ms  DeleteObjects: 0.078667 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 422.518412 seconds.
+  path: Assets/Scenes/Practice_no_traffic.unity
+  artifactKey: Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_no_traffic.unity using Guid(2e4d215f086f64dff96f7102a2d17beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618398d38a006a20da2f1636a706087c') in 0.064397 seconds
+  Import took 0.075572 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004050 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.765 seconds
+Platform modules already initialized, skipping
+Shader 'Custom/EVP Particles Alpha Blended Shadows': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 2.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1595 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: Unknown.
+System memory in use after: Unknown.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2289.
+Total: 5.365542 ms (FindLiveObjects: 0.293458 ms CreateObjectMapping: 0.190375 ms MarkObjects: 4.400542 ms  DeleteObjects: 0.480208 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.033173 seconds.
+  path: Assets/Scenes/Practice_including_traffic.unity
+  artifactKey: Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Practice_including_traffic.unity using Guid(2abb879d2cf8c56499622eb125d5332b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b5127263ae2924470d5ef3eaa78aa6') in 0.023202 seconds
+  Import took 0.027849 seconds .
+
