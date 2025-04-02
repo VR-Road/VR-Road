@@ -4,7 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Physical_skills.unity
+    guid: 5de19e064bb6843d6888e3c7e396cedd
+  - enabled: 1
+    path: Assets/Scenes/Practice_no_traffic.unity
+    guid: 2e4d215f086f64dff96f7102a2d17beb
+  - enabled: 1
+    path: Assets/Scenes/Practice_including_traffic.unity
+    guid: 2abb879d2cf8c56499622eb125d5332b
+  - enabled: 1
+    path: Assets/Scenes/Nighttime_practice.unity
+    guid: 955729b053d804bbdaeba1ef4a42388f
+  - enabled: 1
+    path: Assets/Scenes/Parking.unity
+    guid: 89af7040ed9bc4f598b349d6fdaa1bd5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 48110b23e8971482588c86295e81250c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8d8830631dd354482ac382caffd2b464, type: 2}

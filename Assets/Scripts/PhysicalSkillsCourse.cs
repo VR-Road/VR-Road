@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
-using UnityStandardAssets.Vehicles.Car;
-using TMPro;
+using TMPro;  // For TextMeshPro
+using EVP;   // Import your custom namespace for VehicleController
+using VR_Road.InputSystem;
 
 public class PhysicalSkillsCourse : MonoBehaviour
 {
-    public CarController carController;  // Reference to the CarController
-    public TextMeshProUGUI feedbackText;  // UI Text for feedback
+    public VehicleController vehicleController;  // Reference to the VehicleController
+    public TMP_Text feedbackText;  // UI Text for feedback
     public float targetSpeed1 = 15f;  // Target speed 1 (15 mph)
     public float targetSpeed2 = 40f;  // Target speed 2 (40 mph)
     public float targetSpeed3 = 55f;  // Target speed 3 (55 mph)
@@ -27,7 +27,8 @@ public class PhysicalSkillsCourse : MonoBehaviour
 
     private void Update()
     {
-        float currentSpeed = carController.CurrentSpeed;  // Get current speed from CarController
+        // Get the current speed using the Rigidbody.velocity.magnitude approach
+        float currentSpeed = vehicleController.GetComponent<Rigidbody>().velocity.magnitude * 2.23694f;  // Convert m/s to mph
 
         // Speed test progression
         if (currentSpeedTest == 0 && IsSpeedInRange(currentSpeed, targetSpeed1, buffer1))
@@ -99,11 +100,10 @@ public class PhysicalSkillsCourse : MonoBehaviour
         // Teleport after turning practice is completed
         if (teleportLocation != null && currentSpeedTest == 6)
         {
-            carController.transform.position = teleportLocation.position;
-            carController.transform.rotation = teleportLocation.rotation; // Align with new location
-            feedbackText.text = "Cone Manuevering! Maneuver through and stay under 20 mph !";
+            vehicleController.transform.position = teleportLocation.position;
+            vehicleController.transform.rotation = teleportLocation.rotation; // Align with new location
+            feedbackText.text = "Cone Maneuvering! Maneuver through and stay under 20 mph!";
             currentSpeedTest = 7; // Prevent repeated teleporting
         }
     }
-
 }
