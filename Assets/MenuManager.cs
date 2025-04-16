@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using VR_Road.InputSystem;
 using TMPro;
@@ -10,16 +9,19 @@ public class MenuManager : MonoBehaviour
     public GameObject menuCanvas;
     public TextMeshProUGUI menuText;
     
-    [Header("Input Settings")]
-    [Range(0.8f, 0.99f)]
-    public float steeringDeadzone = 0.9f;
-    public float inputCooldown = 0.3f;
-    
     private DrivingControls drivingControls;
     private bool menuActive = false;
-    private float lastInputTime;
     private int currentSelection = 0;
     private MenuState currentState = MenuState.Main;
+    
+    // Track previous input states for edge detection
+    private bool prevDriveState = false;
+    private bool prevReverseState = false;
+    private bool prevAcceleratorState = false;
+    private bool prevBrakeState = false;
+    
+    // To store original time scale
+    private float originalTimeScale;
     
     private enum MenuState
     {
@@ -29,16 +31,15 @@ public class MenuManager : MonoBehaviour
     }
     
     private string[] mainMenuOptions = { "Tutorial", "Scenes" };
-    private string[] sceneNames = { "Physical_skills", "Practice_no_traffic", "Practice_including_traffic", "Nighttime_practice", "Parking" }; // Update with your scene names
+    private string[] sceneNames = { "Physical_skills", "Practice_no_traffic", "Practice_including_traffic", "Nighttime_practice", "Parking" };
 
     private void Awake()
     {
         drivingControls = new DrivingControls();
         drivingControls.Driving.Enable();
-        
-        // Hide menu initially
         menuCanvas.SetActive(false);
         UpdateMenuDisplay();
+        originalTimeScale = Time.timeScale; // Store original time scale
     }
     
     private void OnEnable()
@@ -49,6 +50,14 @@ public class MenuManager : MonoBehaviour
     private void OnDisable()
     {
         drivingControls.Driving.HomeButton.performed -= _ => ToggleMenu();
+        // Ensure time scale is reset when disabled
+        Time.timeScale = originalTimeScale;
+    }
+
+    private void OnDestroy()
+    {
+        // Clean up input callbacks when destroyed
+        drivingControls.Driving.HomeButton.performed -= _ => ToggleMenu();
     }
     
     private void Update()
@@ -57,68 +66,66 @@ public class MenuManager : MonoBehaviour
         
         HandleMenuNavigation();
         HandleMenuSelection();
+        HandleMenuBack();
     }
     
     private void ToggleMenu()
     {
+        // Check if menu objects still exist
+        if (menuCanvas == null || menuText == null)
+        {
+            drivingControls.Driving.HomeButton.performed -= _ => ToggleMenu();
+            return;
+        }
+
         menuActive = !menuActive;
         menuCanvas.SetActive(menuActive);
         
         if (menuActive)
         {
-            // Reset to main menu when opening
+            // Freeze game when menu opens
+            originalTimeScale = Time.timeScale; // Store current time scale
+            Time.timeScale = 0f;
+            
             currentState = MenuState.Main;
             currentSelection = 0;
             UpdateMenuDisplay();
+        }
+        else
+        {
+            // Unfreeze game when menu closes
+            Time.timeScale = originalTimeScale;
         }
     }
     
     private void HandleMenuNavigation()
     {
-        if (Time.time - lastInputTime < inputCooldown) return;
+        bool currentDriveState = drivingControls.Driving.DriveGear.ReadValue<float>() > 0.1f;
+        bool currentReverseState = drivingControls.Driving.ReverseGear.ReadValue<float>() > 0.1f;
         
-        float steeringInput = drivingControls.Driving.Steering.ReadValue<float>();
-        steeringInput *= -1; // Invert to match your input system
+        // Drive gear pressed (rising edge)
+        if (currentDriveState && !prevDriveState)
+        {
+            currentSelection = (currentSelection + 1) % GetCurrentMenuLength();
+            UpdateMenuDisplay();
+        }
+        // Reverse gear pressed (rising edge)
+        else if (currentReverseState && !prevReverseState)
+        {
+            currentSelection = (currentSelection - 1 + GetCurrentMenuLength()) % GetCurrentMenuLength();
+            UpdateMenuDisplay();
+        }
         
-        // Check for left/right navigation
-        if (steeringInput > steeringDeadzone)
-        {
-            // Right turn - move down
-            if (currentState == MenuState.Main)
-            {
-                currentSelection = (currentSelection + 1) % mainMenuOptions.Length;
-            }
-            else if (currentState == MenuState.Scenes)
-            {
-                currentSelection = (currentSelection + 1) % sceneNames.Length;
-            }
-            
-            UpdateMenuDisplay();
-            lastInputTime = Time.time;
-        }
-        else if (steeringInput < -steeringDeadzone)
-        {
-            // Left turn - move up
-            if (currentState == MenuState.Main)
-            {
-                currentSelection = (currentSelection - 1 + mainMenuOptions.Length) % mainMenuOptions.Length;
-            }
-            else if (currentState == MenuState.Scenes)
-            {
-                currentSelection = (currentSelection - 1 + sceneNames.Length) % sceneNames.Length;
-            }
-            
-            UpdateMenuDisplay();
-            lastInputTime = Time.time;
-        }
+        prevDriveState = currentDriveState;
+        prevReverseState = currentReverseState;
     }
     
     private void HandleMenuSelection()
     {
-        // Use accelerator pedal as "Enter"
-        float acceleratorInput = drivingControls.Driving.AcceleratorPedal.ReadValue<float>();
+        bool currentAcceleratorState = drivingControls.Driving.AcceleratorPedal.ReadValue<float>() > 0.1f;
         
-        if (acceleratorInput > 0.1f && Time.time - lastInputTime > inputCooldown)
+        // Accelerator pressed (rising edge)
+        if (currentAcceleratorState && !prevAcceleratorState)
         {
             if (currentState == MenuState.Main)
             {
@@ -134,17 +141,49 @@ public class MenuManager : MonoBehaviour
             }
             else if (currentState == MenuState.Scenes)
             {
+                // Unfreeze before loading scene
+                Time.timeScale = originalTimeScale;
                 LoadScene(currentSelection);
-                return; // Don't update display since we're changing scenes
-            }
-            else // In tutorial, any selection returns to main menu
-            {
-                currentState = MenuState.Main;
+                return;
             }
             
             UpdateMenuDisplay();
-            lastInputTime = Time.time;
         }
+        
+        prevAcceleratorState = currentAcceleratorState;
+    }
+    
+    private void HandleMenuBack()
+    {
+        bool currentBrakeState = drivingControls.Driving.BrakePedal.ReadValue<float>() > 0.1f;
+        
+        // Brake pressed (rising edge)
+        if (currentBrakeState && !prevBrakeState)
+        {
+            if (currentState != MenuState.Main)
+            {
+                currentState = MenuState.Main;
+                currentSelection = 0;
+                UpdateMenuDisplay();
+            }
+            else
+            {
+                // Close menu if already at main menu
+                ToggleMenu();
+            }
+        }
+        
+        prevBrakeState = currentBrakeState;
+    }
+    
+    private int GetCurrentMenuLength()
+    {
+        return currentState switch
+        {
+            MenuState.Main => mainMenuOptions.Length,
+            MenuState.Scenes => sceneNames.Length,
+            _ => 1
+        };
     }
     
     private void UpdateMenuDisplay()
@@ -157,37 +196,29 @@ public class MenuManager : MonoBehaviour
                 menuContent = "<b>MAIN MENU</b>\n\n";
                 for (int i = 0; i < mainMenuOptions.Length; i++)
                 {
-                    if (i == currentSelection)
-                        menuContent += "<b>> " + mainMenuOptions[i] + "</b>\n";
-                    else
-                        menuContent += "  " + mainMenuOptions[i] + "\n";
+                    menuContent += (i == currentSelection) ? $"<b>> {mainMenuOptions[i]}</b>\n" : $"  {mainMenuOptions[i]}\n";
                 }
+                menuContent += "\n<i>Brake: Close Menu</i>";
                 break;
                 
             case MenuState.Tutorial:
                 menuContent = "<b>TUTORIAL</b>\n\n" +
-                             "HOW TO USE THIS SIMULATION:\n\n" +
-                             "1. STEERING WHEEL: Turn left/right to navigate menus\n" +
-                             "2. ACCELERATOR PEDAL: Press to select menu options\n" +
-                             "3. HOME BUTTON: Toggles the menu on/off\n\n" +
-                             "DRIVING CONTROLS:\n" +
-                             "- Steering Wheel: Turn to control vehicle\n" +
-                             "- Accelerator: Right pedal to go forward\n" +
-                             "- Brake: Left pedal to slow down\n" +
-                             "- Gear Paddles: Change gears\n\n" +
-                             "<i>Press accelerator to return</i>";
+                             "CONTROLS:\n\n" +
+                             "DRIVE GEAR: Move down\n" +
+                             "REVERSE GEAR: Move up\n" +
+                             "ACCELERATOR: Confirm\n" +
+                             "BRAKE PEDAL: Back\n" +
+                             "HOME BUTTON: Toggle menu\n\n" +
+                             "<i>Press brake to return</i>";
                 break;
                 
             case MenuState.Scenes:
                 menuContent = "<b>SELECT SCENE</b>\n\n";
                 for (int i = 0; i < sceneNames.Length; i++)
                 {
-                    if (i == currentSelection)
-                        menuContent += "<b>> " + sceneNames[i] + "</b>\n";
-                    else
-                        menuContent += "  " + sceneNames[i] + "\n";
+                    menuContent += (i == currentSelection) ? $"<b>> {sceneNames[i]}</b>\n" : $"  {sceneNames[i]}\n";
                 }
-                menuContent += "\n<i>Press accelerator to select</i>";
+                menuContent += "\n<i>Accelerator: Select | Brake: Back</i>";
                 break;
         }
         
@@ -196,7 +227,6 @@ public class MenuManager : MonoBehaviour
     
     private void LoadScene(int sceneIndex)
     {
-        // Assuming you have scenes set up in your build settings
         if (sceneIndex < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(sceneIndex);

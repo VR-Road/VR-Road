@@ -1,30 +1,26 @@
 using UnityEngine;
-using TMPro;  // For TextMeshPro
-using EVP;   // Import your custom namespace for VehicleController
-using VR_Road.InputSystem;  // Import the VR Road Input System for handling inputs
+using TMPro;
+using VR_Road.InputSystem;
 
 public class GearIndicator : MonoBehaviour
 {
-    public DrivingControls drivingControls;  // Reference to your DrivingControls script
-    public TMP_Text gearText;  // Reference to the UI Text element for displaying the gear
-
-    private bool isDriveGear = false;  // Track whether the Drive Gear is active
-    private bool isReverseGear = false;  // Track whether the Reverse Gear is active
+    public DrivingControls drivingControls;
+    public TMP_Text gearText;
+    
+    private bool currentDriveState = false;
+    private bool currentReverseState = false;
 
     void OnEnable()
     {
-        // Enable the DrivingControls if it's not already enabled
         if (drivingControls == null)
         {
             drivingControls = new DrivingControls();
         }
-
         drivingControls.Driving.Enable();
     }
 
     void OnDisable()
     {
-        // Disable the DrivingControls when the object is disabled
         if (drivingControls != null)
         {
             drivingControls.Driving.Disable();
@@ -33,22 +29,31 @@ public class GearIndicator : MonoBehaviour
 
     void Update()
     {
-        // Check if "Drive Gear" or "Reverse Gear" is pressed
-        isDriveGear = drivingControls.Driving.DriveGear.triggered;
-        isReverseGear = drivingControls.Driving.ReverseGear.triggered;
-
-        // Set the gear indicator based on the input state
-        if (isDriveGear)
+        // Check for gear toggle inputs
+        if (drivingControls.Driving.DriveGear.triggered)
         {
-            gearText.text = "Gear:  D";  // Drive Gear
+            currentDriveState = !currentDriveState;
+            if (currentDriveState) currentReverseState = false;
         }
-        else if (isReverseGear)
+        
+        if (drivingControls.Driving.ReverseGear.triggered)
         {
-            gearText.text = "Gear:  R";  // Reverse Gear
+            currentReverseState = !currentReverseState;
+            if (currentReverseState) currentDriveState = false;
+        }
+
+        // Update display based on current state
+        if (currentDriveState)
+        {
+            gearText.text = "Gear: D";
+        }
+        else if (currentReverseState)
+        {
+            gearText.text = "Gear: R";
         }
         else
         {
-            gearText.text = "Gear:  P";  // Default to Park if neither gear is engaged
+            gearText.text = "Gear: P";
         }
     }
 }

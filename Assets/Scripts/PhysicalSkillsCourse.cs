@@ -8,9 +8,9 @@ public class PhysicalSkillsCourse : MonoBehaviour
     public VehicleController vehicleController;  // Reference to the VehicleController
     public TMP_Text feedbackText;  // UI Text for feedback
     public float targetSpeed1 = 15f;  // Target speed 1 (15 mph)
-    public float targetSpeed2 = 40f;  // Target speed 2 (40 mph)
-    public float targetSpeed3 = 55f;  // Target speed 3 (55 mph)
-    public float targetSpeed4 = 15f;  // Target reverse speed 4 (15 mph)
+    public float targetSpeed2 = 25f;  // Target speed 2 (40 mph)
+    public float targetSpeed3 = 35f;  // Target speed 3 (55 mph)
+    public float targetSpeed4 = 10f;  // Target reverse speed 4 (15 mph)
 
     public float buffer1 = 3f;  // Speed buffer for target speed 1
     public float buffer2 = 5f;  // Speed buffer for target speed 2
@@ -20,8 +20,13 @@ public class PhysicalSkillsCourse : MonoBehaviour
     public Transform teleportLocation; // Reference to teleport location
     private int currentSpeedTest = 0;  // Keep track of which speed test we are on
 
+    private float brakeHoldTime = 0f;
+    private const float requiredBrakeHoldTime = 3f;
+    private VehicleStandardInput vehicleInput;
+
     private void Start()
     {
+        vehicleInput = vehicleController.GetComponent<VehicleStandardInput>();
         feedbackText.text = "Physical Skills Course Started: Go to 15 mph";
     }
 
@@ -33,12 +38,12 @@ public class PhysicalSkillsCourse : MonoBehaviour
         // Speed test progression
         if (currentSpeedTest == 0 && IsSpeedInRange(currentSpeed, targetSpeed1, buffer1))
         {
-            feedbackText.text = "Now go to 40 mph!";
+            feedbackText.text = "Now go to 25 mph!";
             currentSpeedTest = 1;  // Move to the next speed test
         }
         else if (currentSpeedTest == 1 && IsSpeedInRange(currentSpeed, targetSpeed2, buffer2))
         {
-            feedbackText.text = "Now go to 55 mph!";
+            feedbackText.text = "Now go to 35 mph!";
             currentSpeedTest = 2;  // Move to the next speed test
         }
         else if (currentSpeedTest == 2 && IsSpeedInRange(currentSpeed, targetSpeed3, buffer3))
@@ -48,12 +53,12 @@ public class PhysicalSkillsCourse : MonoBehaviour
         }
         else if (currentSpeedTest == 3 && IsSpeedInRange(currentSpeed, 0, 1f))  // Check if the car has slowed to 0 mph
         {
-            feedbackText.text = "Now reverse at 15 mph.";
+            feedbackText.text = "Now reverse at 10 mph.";
             currentSpeedTest = 4;  // Move to reverse test
         }
         else if (currentSpeedTest == 4 && IsSpeedInRange(currentSpeed, targetSpeed1, buffer1))  // Reverse at 15 mph
         {
-            feedbackText.text = "Great! You've reversed at 15 mph. You've completed the course!";
+            feedbackText.text = "Great! You've reversed at 10 mph. You've completed the course!";
             currentSpeedTest = 5;  // Course complete
         }
         else
@@ -62,13 +67,13 @@ public class PhysicalSkillsCourse : MonoBehaviour
             if (currentSpeedTest == 0)
                 feedbackText.text = "Part 1: Begin by accelerating smoothly to 15 mph!";
             else if (currentSpeedTest == 1)
-                feedbackText.text = "Next, decelerate to a complete stop, then accelerate to 40 mph.";
+                feedbackText.text = "Next, decelerate to a complete stop, then accelerate to 25 mph.";
             else if (currentSpeedTest == 2)
-                feedbackText.text = "Finally, bring the vehicle to a full stop and accelerate to 55 mph.";
+                feedbackText.text = "Finally, bring the vehicle to a full stop and accelerate to 35 mph.";
             else if (currentSpeedTest == 3)
                 feedbackText.text = "Now slow down to 0 mph before reversing.";
             else if (currentSpeedTest == 4)
-                feedbackText.text = "Now reverse at 15 mph. Remember, keep your speed steady!";
+                feedbackText.text = "Now reverse at 10 mph. Remember, keep your speed steady!";
         }
 
         // Turning practice after the final reverse test
@@ -81,10 +86,20 @@ public class PhysicalSkillsCourse : MonoBehaviour
         // Check if the player is in the turning test and ready to teleport (press space bar)
         if (currentSpeedTest == 6)
         {
-            feedbackText.text = "Great! You've completed turning practice. Press space to teleport.";
-            if (Input.GetKeyDown(KeyCode.Space)) // Check for space bar press
+            feedbackText.text = "Great! You've completed turning practice. Hold brake for 3 seconds to teleport.";
+            
+            if (vehicleInput != null && vehicleInput.target != null && vehicleInput.target.brakeInput > 0.9f)
             {
-                TeleportToConesSection();
+                brakeHoldTime += Time.deltaTime;
+                if (brakeHoldTime >= requiredBrakeHoldTime)
+                {
+                    TeleportToConesSection();
+                    brakeHoldTime = 0f;
+                }
+            }
+            else
+            {
+                brakeHoldTime = 0f;
             }
         }
     }

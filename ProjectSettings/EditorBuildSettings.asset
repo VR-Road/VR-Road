@@ -13,10 +13,10 @@ EditorBuildSettings:
     guid: 2e4d215f086f64dff96f7102a2d17beb
   - enabled: 1
     path: Assets/Scenes/Practice_including_traffic.unity
-    guid: 2abb879d2cf8c56499622eb125d5332b
+    guid: af044764d8592274499075536bde2243
   - enabled: 1
     path: Assets/Scenes/Nighttime_practice.unity
-    guid: 955729b053d804bbdaeba1ef4a42388f
+    guid: 65c8b5bc9705f4c428336a85ee775d0e
   - enabled: 1
     path: Assets/Scenes/Parking.unity
     guid: 89af7040ed9bc4f598b349d6fdaa1bd5

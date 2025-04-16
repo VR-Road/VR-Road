@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/godwi/Desktop/2025 Projects/VRroad/VR-Road/VR-Road/Packages/manifest.json
+    m_FilePath: C:/Users/T_che/VR-Road/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638787220822295743
+      ticks: 638792181352736588
     m_Hash: 916648236
   m_LockFileStatus:
-    m_FilePath: C:/Users/godwi/Desktop/2025 Projects/VRroad/VR-Road/VR-Road/Packages/packages-lock.json
+    m_FilePath: C:/Users/T_che/VR-Road/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638787220822305706
+      ticks: 638792181352746597
     m_Hash: 3024747239
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -33,8 +33,8 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: Editor
-      type: 
+      category: 
+      type: asset
       description: Collaborate with your teammates with the official version control
         system for Unity. Collaborate is a simple way for teams to save, share, and
         sync your Unity project.
@@ -77,6 +77,8 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
+        - 1.14.18
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -85,6 +87,13 @@ m_PackageAssets:
         - 1.15.13
         - 1.15.15
         - 1.15.16
+        - 1.15.17
+        - 1.15.18
+        - 1.17.0
+        - 1.17.1
+        - 1.17.2
+        - 1.17.6
+        - 1.17.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -92,9 +101,24 @@ m_PackageAssets:
         - 2.0.0-preview.20
         - 2.0.0-preview.21
         - 2.0.0-preview.22
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
+        - 2.0.7
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
+        - 2.1.0
+        - 2.2.0
+        - 2.3.1
+        - 2.4.3
+        - 2.4.4
+        - 2.5.1
+        - 2.5.2
+        - 2.6.0
+        - 2.7.1
         compatible:
         - 1.3.9
         - 1.4.9
@@ -111,6 +135,8 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
+        - 1.14.18
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -118,6 +144,8 @@ m_PackageAssets:
         - 2.0.0-preview.20
         - 2.0.0-preview.21
         - 2.0.0-preview.22
+        - 2.0.4
+        - 2.0.5
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -143,7 +171,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -160,7 +188,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -169,7 +197,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The JetBrains Rider Editor package provides an integration for
         using the JetBrains Rider IDE as a code editor for Unity. It adds support
         for generating .csproj files for code completion and auto-discovery of installations.
@@ -206,6 +234,22 @@ m_PackageAssets:
         - 3.0.10
         - 3.0.12
         - 3.0.13
+        - 3.0.14
+        - 3.0.15
+        - 3.0.16
+        - 3.0.17
+        - 3.0.18
+        - 3.0.20
+        - 3.0.21
+        - 3.0.22
+        - 3.0.24
+        - 3.0.25
+        - 3.0.26
+        - 3.0.27
+        - 3.0.28
+        - 3.0.31
+        - 3.0.34
+        - 3.0.35
         compatible:
         - 1.0.2
         - 1.0.6
@@ -236,6 +280,22 @@ m_PackageAssets:
         - 3.0.10
         - 3.0.12
         - 3.0.13
+        - 3.0.14
+        - 3.0.15
+        - 3.0.16
+        - 3.0.17
+        - 3.0.18
+        - 3.0.20
+        - 3.0.21
+        - 3.0.22
+        - 3.0.24
+        - 3.0.25
+        - 3.0.26
+        - 3.0.27
+        - 3.0.28
+        - 3.0.31
+        - 3.0.34
+        - 3.0.35
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -258,7 +318,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -275,7 +335,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -284,7 +344,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio as code editor
         for unity. Adds support for generating csproj files for intellisense purposes,
         auto discovery of installations, etc.
@@ -310,6 +370,13 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
+        - 2.0.16
+        - 2.0.17
+        - 2.0.18
+        - 2.0.20
+        - 2.0.21
+        - 2.0.22
+        - 2.0.23
         compatible:
         - 1.0.2
         - 1.0.3
@@ -329,7 +396,14 @@ m_PackageAssets:
         - 2.0.12
         - 2.0.14
         - 2.0.15
-        verified: 2.0.15
+        - 2.0.16
+        - 2.0.17
+        - 2.0.18
+        - 2.0.20
+        - 2.0.21
+        - 2.0.22
+        - 2.0.23
+        verified: 2.0.23
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -351,7 +425,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -368,7 +442,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -377,7 +451,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
@@ -424,7 +498,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -441,7 +515,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.2
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.inputsystem@1.0.2
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.inputsystem@1.0.2
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -450,7 +524,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: A new input system which can be used as a more extensible and
         customizable alternative to Unity's classic input system in UnityEngine.Input.
       status: 4
@@ -489,6 +563,29 @@ m_PackageAssets:
         - 1.1.1
         - 1.2.0
         - 1.3.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.5.0
+        - 1.5.1
+        - 1.6.1
+        - 1.6.3
+        - 1.7.0
+        - 1.8.0-pre.1
+        - 1.8.0-pre.2
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.9.0
+        - 1.10.0
+        - 1.11.0
+        - 1.11.1
+        - 1.11.2
+        - 1.12.0
+        - 1.13.0
+        - 1.13.1
+        - 1.14.0
         compatible:
         - 0.1.2-preview
         - 0.2.0-preview
@@ -522,6 +619,26 @@ m_PackageAssets:
         - 1.1.1
         - 1.2.0
         - 1.3.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.5.0
+        - 1.5.1
+        - 1.6.1
+        - 1.6.3
+        - 1.7.0
+        - 1.8.0-pre.1
+        - 1.8.0-pre.2
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.9.0
+        - 1.10.0
+        - 1.11.0
+        - 1.11.1
+        - 1.11.2
+        - 1.12.0
         verified: 1.0.2
       dependencies: []
       resolvedDependencies: []
@@ -542,7 +659,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -559,7 +676,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -567,8 +684,8 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: Unity Test Framework
-      type: 
+      category: 
+      type: asset
       description: Test framework for running Edit mode and Play mode tests in Unity.
       status: 4
       errors: []
@@ -607,6 +724,25 @@ m_PackageAssets:
         - 1.1.29
         - 1.1.30
         - 1.1.31
+        - 1.1.33
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
@@ -616,9 +752,28 @@ m_PackageAssets:
         - 1.1.29
         - 1.1.30
         - 1.1.31
+        - 1.1.33
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.0
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 2.0.1-exp.1
+        - 2.0.1-exp.2
         - 2.0.1-pre.12
         - 2.0.1-pre.18
-        verified: 1.1.31
+        verified: 1.1.33
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -644,7 +799,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -661,7 +816,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -669,8 +824,8 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: Text Rendering
-      type: 
+      category: 
+      type: asset
       description: 'TextMeshPro is the ultimate text solution for Unity. It''s the
         perfect replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -776,20 +931,43 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
+        - 3.0.8
+        - 3.0.9
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
+        - 3.2.0-pre.4
+        - 3.2.0-pre.5
+        - 3.2.0-pre.6
+        - 3.2.0-pre.7
+        - 3.2.0-pre.8
+        - 3.2.0-pre.9
+        - 3.2.0-pre.10
+        - 3.2.0-pre.11
+        - 3.2.0-pre.12
         - 4.0.0-pre.1
+        - 4.0.0-pre.2
         compatible:
         - 3.0.1
         - 3.0.3
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
+        - 3.0.8
+        - 3.0.9
         - 3.2.0-pre.1
         - 3.2.0-pre.2
         - 3.2.0-pre.3
-        verified: 3.0.6
+        - 3.2.0-pre.4
+        - 3.2.0-pre.5
+        - 3.2.0-pre.6
+        - 3.2.0-pre.7
+        - 3.2.0-pre.8
+        - 3.2.0-pre.9
+        - 3.2.0-pre.10
+        verified: 3.0.9
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -814,7 +992,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -831,7 +1009,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -840,7 +1018,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Use Unity Timeline to create cinematic content, game-play sequences,
         audio sequences, and complex particle effects.
       status: 4
@@ -915,10 +1093,26 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
+        - 1.7.3
+        - 1.7.4
+        - 1.7.5
+        - 1.7.6
+        - 1.7.7
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.8.6
+        - 1.8.7
+        - 1.8.8
         compatible:
         - 1.4.7
         - 1.4.8
@@ -944,24 +1138,39 @@ m_PackageAssets:
         - 1.6.2
         - 1.6.3
         - 1.6.4
+        - 1.6.5
         - 1.7.0-pre.1
         - 1.7.0-pre.2
         - 1.7.0
         - 1.7.1
+        - 1.7.2
+        - 1.7.3
+        - 1.7.4
+        - 1.7.5
+        - 1.7.6
+        - 1.7.7
+        - 1.8.0
+        - 1.8.1
+        - 1.8.2
+        - 1.8.3
+        - 1.8.4
+        - 1.8.5
+        - 1.8.6
+        - 1.8.7
         verified: 1.4.8
       dependencies:
+      - name: com.unity.modules.audio
+        version: 1.0.0
       - name: com.unity.modules.director
         version: 1.0.0
       - name: com.unity.modules.animation
         version: 1.0.0
-      - name: com.unity.modules.audio
-        version: 1.0.0
       - name: com.unity.modules.particlesystem
         version: 1.0.0
       resolvedDependencies:
-      - name: com.unity.modules.director
-        version: 1.0.0
       - name: com.unity.modules.audio
+        version: 1.0.0
+      - name: com.unity.modules.director
         version: 1.0.0
       - name: com.unity.modules.animation
         version: 1.0.0
@@ -981,7 +1190,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1061,7 +1270,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.4.1
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.xr.management@4.4.1
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.management@4.4.1
       assetPath: Packages/com.unity.xr.management
       name: com.unity.xr.management
       displayName: XR Plugin Management
@@ -1132,6 +1341,7 @@ m_PackageAssets:
         - 4.4.0
         - 4.4.1
         - 4.5.0
+        - 4.5.1
         compatible:
         - 3.2.13
         - 3.2.15
@@ -1210,7 +1420,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.9.1
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.oculus@1.9.1
       assetPath: Packages/com.unity.xr.oculus
       name: com.unity.xr.oculus
       displayName: Oculus XR Plugin
@@ -1219,7 +1429,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Provides display and input support for Oculus devices.
       status: 4
       errors: []
@@ -1272,15 +1482,45 @@ m_PackageAssets:
         - 1.11.0
         - 1.11.2
         - 1.12.0
+        - 1.12.1
+        - 1.13.0
+        - 1.13.1-preview.1
+        - 1.13.1-preview.2
+        - 1.13.1
         - 2.0.0-preview.1
         - 2.0.0-preview.2
         - 2.0.0-preview.4
         - 2.0.0-preview.5
+        - 2.0.2-preview.1
+        - 2.2.0-preview.1
+        - 2.2.3-preview.1
+        - 2.2.3-preview.2
         - 3.0.0-pre.1
         - 3.0.0-pre.2
         - 3.0.0-pre.4
         - 3.0.0
         - 3.0.1
+        - 3.0.2
+        - 3.1.1
+        - 3.2.1
+        - 3.2.2-pre.1
+        - 3.2.2
+        - 3.2.3-pre.1
+        - 3.2.3
+        - 3.3.0
+        - 3.4.0
+        - 3.4.1
+        - 4.0.0
+        - 4.1.1
+        - 4.1.2
+        - 4.2.0-exp-env-depth.1
+        - 4.2.0-exp-env-depth.2
+        - 4.2.0
+        - 4.3.0-pre.1
+        - 4.3.0
+        - 4.4.0
+        - 4.5.0
+        - 4.5.1
         compatible:
         - 1.9.0
         - 1.9.1
@@ -1291,15 +1531,20 @@ m_PackageAssets:
         - 1.11.0
         - 1.11.2
         - 1.12.0
-        - 2.0.0-preview.2
-        - 3.0.0-pre.2
+        - 1.12.1
         verified: 1.9.1
       dependencies:
-      - name: com.unity.xr.management
-        version: 4.0.1
       - name: com.unity.ugui
         version: 1.0.0
+      - name: com.unity.xr.management
+        version: 4.0.1
       resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
       - name: com.unity.xr.management
         version: 4.4.1
       - name: com.unity.modules.vr
@@ -1314,12 +1559,6 @@ m_PackageAssets:
         version: 1.0.0
       - name: com.unity.xr.legacyinputhelpers
         version: 2.1.7
-      - name: com.unity.ugui
-        version: 1.0.0
-      - name: com.unity.modules.ui
-        version: 1.0.0
-      - name: com.unity.modules.imgui
-        version: 1.0.0
       keywords:
       - oculus
       - xr
@@ -1336,7 +1575,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3095,7 +3334,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.1.7
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.7
       assetPath: Packages/com.unity.xr.legacyinputhelpers
       name: com.unity.xr.legacyinputhelpers
       displayName: XR Legacy Input Helpers
@@ -3103,8 +3342,8 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: XR
-      type: 
+      category: 
+      type: asset
       description: This package includes the tracked pose driver for the legacy input
         system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
         Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects
@@ -3115,10 +3354,41 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.0
+        - 1.0.2
+        - 1.0.3
+        - 1.3.1
+        - 1.3.2
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.11
+        - 2.0.1
+        - 2.0.2
+        - 2.0.4
+        - 2.0.6
+        - 2.0.8
+        - 2.1.1
+        - 2.1.2
+        - 2.1.3
+        - 2.1.4
+        - 2.1.6
         - 2.1.7
+        - 2.1.8
+        - 2.1.9
+        - 2.1.10
+        - 2.1.11
+        - 2.1.12
         compatible:
         - 2.1.7
-        verified: 2.1.7
+        - 2.1.8
+        - 2.1.9
+        - 2.1.10
+        - 2.1.11
+        - 2.1.12
+        verified: 2.1.12
       dependencies:
       - name: com.unity.modules.vr
         version: 1.0.0
@@ -3149,11 +3419,11 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637434003470000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3166,7 +3436,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\godwi\Desktop\2025 Projects\VRroad\VR-Road\VR-Road\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\T_che\VR-Road\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3174,8 +3444,8 @@ m_PackageAssets:
         name: 
         email: 
         url: 
-      category: Libraries
-      type: 
+      category: 
+      type: asset
       description: Custom version of the nunit package build to work with Unity.
         Used by the Unity Test Framework.
       status: 4
@@ -3189,6 +3459,9 @@ m_PackageAssets:
         - 1.0.5
         - 1.0.6
         - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
         compatible:
         - 0.1.5-preview
         - 0.1.6-preview
@@ -3197,6 +3470,9 @@ m_PackageAssets:
         - 1.0.5
         - 1.0.6
         - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
         verified: 1.0.6
       dependencies: []
       resolvedDependencies: []
@@ -3212,7 +3488,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3226,5 +3502,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/godwi/Desktop/2025 Projects/VRroad/VR-Road/VR-Road/Packages
+m_ProjectPath: C:/Users/T_che/VR-Road/Packages
 m_EditorVersion: 2020.3.4f1 (0abb6314276a)
