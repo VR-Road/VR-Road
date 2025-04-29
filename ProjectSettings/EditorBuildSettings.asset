@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start_screen.unity
+    guid: c4ebd3b15e7b0ab408ac9779a966867b
+  - enabled: 1
     path: Assets/Scenes/Physical_skills.unity
     guid: 5de19e064bb6843d6888e3c7e396cedd
   - enabled: 1
     path: Assets/Scenes/Practice_no_traffic.unity
-    guid: 2e4d215f086f64dff96f7102a2d17beb
+    guid: 1251451e6f190024a82b32954d733053
   - enabled: 1
     path: Assets/Scenes/Practice_including_traffic.unity
     guid: af044764d8592274499075536bde2243
   - enabled: 1
-    path: Assets/Scenes/Nighttime_practice.unity
-    guid: 65c8b5bc9705f4c428336a85ee775d0e
+    path: Assets/Scenes/Nighttime.unity
+    guid: 96340f8b02f457441bdd19af3c9ddf0b
   - enabled: 1
     path: Assets/Scenes/Parking.unity
     guid: 89af7040ed9bc4f598b349d6fdaa1bd5

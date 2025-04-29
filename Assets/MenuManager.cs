@@ -30,8 +30,8 @@ public class MenuManager : MonoBehaviour
         Scenes
     }
     
-    private string[] mainMenuOptions = { "Tutorial", "Scenes" };
-    private string[] sceneNames = { "Physical_skills", "Practice_no_traffic", "Practice_including_traffic", "Nighttime_practice", "Parking" };
+    private string[] mainMenuOptions = { "Tutorial", "Levels" };
+    private string[] sceneNames = { "Start_scene", "Physical_skills", "Practice_no_traffic", "Practice_including_traffic", "Nighttime_practice", "Parking" };
 
     private void Awake()
     {
@@ -193,12 +193,12 @@ public class MenuManager : MonoBehaviour
         switch (currentState)
         {
             case MenuState.Main:
-                menuContent = "<b>MAIN MENU</b>\n\n";
+                menuContent = "<b>MAIN MENU USE THIS TO NAVIGATE THROUGH LEVELS</b>\n\n";
                 for (int i = 0; i < mainMenuOptions.Length; i++)
                 {
                     menuContent += (i == currentSelection) ? $"<b>> {mainMenuOptions[i]}</b>\n" : $"  {mainMenuOptions[i]}\n";
                 }
-                menuContent += "\n<i>Brake: Close Menu</i>";
+                menuContent += "\n<i>Brake: Close Menu Accelerate: Select</i>";
                 break;
                 
             case MenuState.Tutorial:
@@ -213,7 +213,8 @@ public class MenuManager : MonoBehaviour
                 break;
                 
             case MenuState.Scenes:
-                menuContent = "<b>SELECT SCENE</b>\n\n";
+                menuContent = "<b>SELECT LEVEL</b>\n\n";
+                
                 for (int i = 0; i < sceneNames.Length; i++)
                 {
                     menuContent += (i == currentSelection) ? $"<b>> {sceneNames[i]}</b>\n" : $"  {sceneNames[i]}\n";
@@ -229,7 +230,9 @@ public class MenuManager : MonoBehaviour
     {
         if (sceneIndex < SceneManager.sceneCountInBuildSettings)
         {
+            DynamicGI.UpdateEnvironment(); 
             SceneManager.LoadScene(sceneIndex);
+            DynamicGI.UpdateEnvironment();
         }
     }
 }

@@ -214,6 +214,7 @@ namespace EVP
         public enum ThrottleAndBrakeInput { SingleAxis, SeparateAxes };
         public ThrottleAndBrakeInput throttleAndBrakeInput = ThrottleAndBrakeInput.SingleAxis;
         public bool handbrakeOverridesThrottle = false;
+        
 
         [Space(5)]
         public string steerAxis = "Horizontal";
@@ -222,6 +223,11 @@ namespace EVP
         public string brakeAxis = "Fire3";
         public string handbrakeAxis = "Jump";
         public KeyCode resetVehicleKey = KeyCode.Return;
+
+        
+        [Header("Speed Limit")]
+        [Tooltip("Maximum speed in MPH")]
+        public float maxSpeedMPH = 30f;
 
         private DrivingControls m_DrivingControls;
         private bool m_doReset = false;
@@ -270,9 +276,10 @@ namespace EVP
             // Original input reading (keeping your -1 inversion)
             float rawSteerInput = m_DrivingControls.Driving.Steering.ReadValue<float>();
             rawSteerInput *= -1;
+            
 
             // Original resting state check
-            if (rawSteerInput >= 0.99f || rawSteerInput <= -0.99f)
+            if (rawSteerInput > 0.99f || rawSteerInput < -0.99f)
             {
                 rawSteerInput = 0.0f;
             }
@@ -306,10 +313,22 @@ namespace EVP
             if (brakeInput == -1.0f) brakeInput = 0.0f;
             else brakeInput = Mathf.Clamp(brakeInput, -0.99f, 0.99f);
 
+            float maxSpeedMPS = maxSpeedMPH * 0.44704f;
+
+
+
             // Original gear logic (unchanged)
             if (driveGear)
             {
-                target.throttleInput = throttleInput; // Now 0→1 range only
+                if (target.speed >= maxSpeedMPS)
+                {
+                    target.throttleInput = 0f; // Hard stop acceleration
+                }
+                else
+                {
+                    target.throttleInput = throttleInput;
+                }
+
                 target.brakeInput = brakeInput;
             }
             else if (reverseGear)

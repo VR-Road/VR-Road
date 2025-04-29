@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638792181352736588
-    m_Hash: 916648236
+      ticks: 638810479729531871
+    m_Hash: 898848929
   m_LockFileStatus:
     m_FilePath: C:/Users/T_che/VR-Road/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638792181352746597
-    m_Hash: 3024747239
+      ticks: 638810479744513840
+    m_Hash: 984736840
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -250,6 +250,7 @@ m_PackageAssets:
         - 3.0.31
         - 3.0.34
         - 3.0.35
+        - 3.0.36
         compatible:
         - 1.0.2
         - 1.0.6
@@ -296,6 +297,7 @@ m_PackageAssets:
         - 3.0.31
         - 3.0.34
         - 3.0.35
+        - 3.0.36
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework

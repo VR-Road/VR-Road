@@ -9,7 +9,7 @@ public class PhysicalSkillsCourse : MonoBehaviour
     public TMP_Text feedbackText;  // UI Text for feedback
     public float targetSpeed1 = 15f;  // Target speed 1 (15 mph)
     public float targetSpeed2 = 25f;  // Target speed 2 (40 mph)
-    public float targetSpeed3 = 35f;  // Target speed 3 (55 mph)
+    public float targetSpeed3 = 30f;  // Target speed 3 (55 mph)
     public float targetSpeed4 = 10f;  // Target reverse speed 4 (15 mph)
 
     public float buffer1 = 3f;  // Speed buffer for target speed 1
@@ -43,7 +43,7 @@ public class PhysicalSkillsCourse : MonoBehaviour
         }
         else if (currentSpeedTest == 1 && IsSpeedInRange(currentSpeed, targetSpeed2, buffer2))
         {
-            feedbackText.text = "Now go to 35 mph!";
+            feedbackText.text = "Now go to 30 mph!";
             currentSpeedTest = 2;  // Move to the next speed test
         }
         else if (currentSpeedTest == 2 && IsSpeedInRange(currentSpeed, targetSpeed3, buffer3))
@@ -69,7 +69,7 @@ public class PhysicalSkillsCourse : MonoBehaviour
             else if (currentSpeedTest == 1)
                 feedbackText.text = "Next, decelerate to a complete stop, then accelerate to 25 mph.";
             else if (currentSpeedTest == 2)
-                feedbackText.text = "Finally, bring the vehicle to a full stop and accelerate to 35 mph.";
+                feedbackText.text = "Finally, bring the vehicle to a full stop and accelerate to 30 mph.";
             else if (currentSpeedTest == 3)
                 feedbackText.text = "Now slow down to 0 mph before reversing.";
             else if (currentSpeedTest == 4)
@@ -117,7 +117,7 @@ public class PhysicalSkillsCourse : MonoBehaviour
         {
             vehicleController.transform.position = teleportLocation.position;
             vehicleController.transform.rotation = teleportLocation.rotation; // Align with new location
-            feedbackText.text = "Cone Maneuvering! Maneuver through and stay under 20 mph!";
+            feedbackText.text = "Maneuver through and stay under 20 mph! Once finished practice at your own will then press The menu button to move on to the next level";
             currentSpeedTest = 7; // Prevent repeated teleporting
         }
     }

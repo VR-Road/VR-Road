@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Practice_including_traffic.unity
+- path: Assets/Scenes/Start_screen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
