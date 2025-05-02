@@ -18,7 +18,7 @@ public class IntroManager : MonoBehaviour
 
         "Driving Controls Overview:\n\n- Steering Wheel: Steer\n- Drive Gear: Move Forward\n- Reverse Gear: Move Backward\n- Brake Pedal: Stop\n- Accelerator Pedal: Accelerate",
         
-        "Take your time and enjoy the experience.\n\nWhen you're ready, press the HOME button to open the menu, and navigate to the 'Physical Skills' level.\n\nRelax and have fun learning at VR_Road!"
+        "Take your time and enjoy the experience.\n\nWhen you're ready, press the HOME button in the center of the wheel to open the menu, and navigate to the 'Physical Skills' level.\n\nRelax and have fun learning at VR_Road!"
     };
 
     private bool prevAcceleratorState = false;
