@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Start_screen.unity
+- path: Assets/Scenes/Nighttime.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
