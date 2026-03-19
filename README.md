@@ -1,9 +1,8 @@
-# VR-ROAD: Immersive VR Driving Simulator 🚗💨
+# VR-ROAD: Immersive VR Driving Simulator 
 
 **Website:** [vr-road.com](https://www.vr-road.com)  
 **Demo Video:** [YouTube Demo](https://www.youtube.com/watch?v=DnPFD-KncgM)
 
----
 
 ## Description
 
